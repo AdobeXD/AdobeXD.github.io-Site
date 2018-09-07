@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:200,300,400,700");
+
+body {
+  margin: 0;
+  font-size: 14px;
+}
+
+.App {
+  font-family: "Roboto", Helvetica Neue, Helvetica, Arial, sans-serif;
+  min-width: 900px;
+}
+
+p {
+  margin: 16px;
+  margin-top: 0;
+  font-size: 100%
+}
+
+a {
+  color: #1592e6;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.logos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.logos img {
+  height: 32px;
+  padding: 16px;
+}
