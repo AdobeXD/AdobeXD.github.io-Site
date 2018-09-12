@@ -37,7 +37,7 @@ export default function Hero({
     body: {
       display: "flex",
       flexDirection: "row",
-      justifyContent: "space-between",
+      justifyContent: "center",
       flexWrap: "nowrap",
       minWidth: 900,
       maxWidth: 1200,
@@ -45,7 +45,7 @@ export default function Hero({
     }
   };
   return (
-    <div style={styles.wrapper}>
+    <div className="hero" style={styles.wrapper}>
       {heading && <div style={styles[level]}>{heading}</div>}
       <div style={styles.body}>{children}</div>
       {footing}

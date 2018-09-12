@@ -37,3 +37,27 @@ a:hover {
   height: 32px;
   padding: 16px;
 }
+
+.footer {
+  padding: 48px;
+  padding-bottom: 0;
+  color: #B8B8B8;
+  text-align: right;
+}
+
+.footer a {
+  color: #B8B8B8;
+}
+
+.footer a:hover {
+  color: #EAEAEA;
+}
+
+.hero {
+  justify-content: center;
+}
+
+.hero img {
+  width: 678px;
+  height: 300px;
+}
