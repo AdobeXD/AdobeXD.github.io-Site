@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Button({ href, children } = {}) {
+export default function Button({ href, target, children } = {}) {
   const styles = {
     wrapper: {
       display: "flex",
@@ -20,7 +20,7 @@ export default function Button({ href, children } = {}) {
   };
   return (
     <div style={styles.wrapper}>
-      <a aria-role="button" href={href} style={styles.a}>
+      <a aria-role="button" href={href} style={styles.a} target={target}>
         {children}
       </a>
     </div>

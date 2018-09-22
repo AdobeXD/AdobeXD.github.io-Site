@@ -9,7 +9,7 @@ import ComingSoon from "./pages/ComingSoon.jsx";
 function App() {
   return (
     <div className="App">
-      <ComingSoon />
+      <Home />
     </div>
   );
 }

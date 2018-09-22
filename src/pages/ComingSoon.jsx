@@ -31,7 +31,7 @@ export default function Home() {
         <Header items={[]} />
         <Hero heading={"The world of XD plugin creation...coming soon!"}
         footing={
-                    <Button href="#">
+                    <Button target="_blank" href="https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=BPQ22V">
                         Get Launch Notification
                     </Button>
                 }>
@@ -50,9 +50,9 @@ export default function Home() {
               integrate with your DAM or brand management system.
             </p>
             <p class="logos">
-              <img src={SiliconPublishingLogo} />
-              <img src={UIFacesLogo} />
-              <img src={IconScoutLogo} />
+              <img src={SiliconPublishingLogo} title="Silicon Publishing" />
+              <img src={UIFacesLogo} title="UI Faces" />
+              <img src={IconScoutLogo} title="Icon Scout" />
             </p>
           </Card>
           <Card level="h4" title="Automation &amp; Utility">
@@ -61,9 +61,9 @@ export default function Home() {
               creativity by enabling generative and data-driven designs.
             </p>
             <p class="logos">
-              <img src={AirTableLogo} />
-              <img src={ImpekableLogo} />
-              <img src={StarkLogo} />
+              <img src={AirTableLogo} title="Airtable" />
+              <img src={ImpekableLogo} title="Impekable" />
+              <img src={StarkLogo} title="Stark" />
             </p>
           </Card>
         </Cards>
@@ -76,9 +76,9 @@ export default function Home() {
               services and content management systems.
             </p>
             <p class="logos">
-              <img src={DribbbleLogo} />
-              <img src={BehanceLogo} />
-              <img src={UserTestingLogo} />
+              <img src={DribbbleLogo} title="Dribbble" />
+              <img src={BehanceLogo} title="Behance" />
+              <img src={UserTestingLogo} title="UserTesting" />
             </p>
           </Card>
           <Card level="h4" title="Designer &amp; Stakeholder Collaboration">
@@ -87,9 +87,9 @@ export default function Home() {
               integrating with the workflow services your team uses.
             </p>
             <p class="logos">
-              <img src={TrelloLogo} />
-              <img src={SlopeLogo} />
-              <img src={InMotionNowLogo} />
+              <img src={TrelloLogo} title="Trello" />
+              <img src={SlopeLogo} title="Slope" />
+              <img src={InMotionNowLogo} title="InMotionNow" />
             </p>
           </Card>
         </Cards>
@@ -98,22 +98,22 @@ export default function Home() {
             <p>
               Follow the Adobe Tech Blog for early news and articles about XD Plugins.
             </p>
-            <a href="#">Read the blog</a>
+            <a href="https://medium.com/adobetech">Read the blog</a>
           </Card>
           <Card level="h4" title="User Community">
             <p>
-              See what users want from Adobe XD pugins and get inspiration for your first plugin idea.
+              See what users want from Adobe XD plugins and get inspiration for your first plugin idea.
             </p>
-            <a href="#">Learn more about users</a>
+            <a href="https://adobexd.uservoice.com/forums/353007-adobe-xd-feature-requests?category_id=159993">Learn more about users</a>
           </Card>
         </Cards>
         <Cards backgroundColor="#2C2C2C">
           <p className="footer" >
             &copy; Copyright 2018 Adobe. All rights reserved.
-            {" / "}<a href="#">Privacy</a>
-            {" / "}<a href="#">Terms of Use</a>
-            {" / "}<a href="#">Cookies</a>
-            {" / "}<a href="#">Ad Choices</a>
+            {" / "}<a target="_blank" href="https://www.adobe.com/privacy.html">Privacy</a>
+            {" / "}<a target="_blank" href="https://www.adobe.com/legal/terms.html">Terms of Use</a>
+            {/*{" / "}<a href="#">Cookies</a>
+            {" / "}<a href="#">Ad Choices</a>*/}
           </p>
         </Cards>
       </Fragment>

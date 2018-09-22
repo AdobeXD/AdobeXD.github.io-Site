@@ -34,6 +34,7 @@ export default function Header({ items = [] } = {}) {
       fontWeight: "bold",
       textDecoration: "none"
     }
+
   };
 
   return (

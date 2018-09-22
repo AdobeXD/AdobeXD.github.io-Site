@@ -26,11 +26,13 @@ import InMotionNowLogo from "../assets/logos/F.inmotionnowlogo.png";
 
 export default function Home() {
     const items = [
+      { label: "Overview", href: "#" },
       { label: "Quick Start", href: "#" },
-      { label: "Documentation", href: "#" },
+      { label: "API Reference", href: "#" },
       { label: "Samples", href: "#" },
       { label: "Community", href: "#" },
-      { label: "I/O Developer Console", href: "#" }
+      //{ label: "I/O Console", href: "#" }
+      { label: "Submit Plugin", href: "#", type: "cta" }
     ];
     return (
       <Fragment>
