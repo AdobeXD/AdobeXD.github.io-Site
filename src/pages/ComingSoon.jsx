@@ -62,7 +62,7 @@ export default function Home() {
             </p>
             <p class="logos">
               <img src={AirTableLogo} title="Airtable" />
-              <img src={ImpekableLogo} title="Impekable" />
+              <img style={{height: 96, margin: "-32px 0"}} src={ImpekableLogo} title="Impekable" />
               <img src={StarkLogo} title="Stark" />
             </p>
           </Card>
