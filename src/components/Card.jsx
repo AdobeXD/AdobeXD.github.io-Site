@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Card({ img, title, children, level = "h3" } = {}) {
+export default function Card({ img, title, children, level = "h3", imgAlt="" } = {}) {
   const styles = {
     wrapper: {
       display: "flex",
@@ -37,7 +37,7 @@ export default function Card({ img, title, children, level = "h3" } = {}) {
   };
   return (
     <div style={styles.wrapper}>
-      {img && <img style={styles.img} src={img} />}
+      {img && <img style={styles.img} src={img} alt={imgAlt} />}
       <div style={styles[level]}>{title}</div>
       <div style={styles.body}>{children}</div>
     </div>

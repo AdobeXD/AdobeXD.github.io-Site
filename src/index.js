@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 
 import "./styles.css";
 
-import Home from "./pages/Home.jsx";
+//import Home from "./pages/Home.jsx";
 import ComingSoon from "./pages/ComingSoon.jsx";
 
 function App() {

@@ -20,7 +20,7 @@ export default function Button({ href, target, children } = {}) {
   };
   return (
     <div style={styles.wrapper}>
-      <a aria-role="button" href={href} style={styles.a} target={target}>
+      <a role="button" href={href} style={styles.a} target={target}>
         {children}
       </a>
     </div>

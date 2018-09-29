@@ -61,7 +61,7 @@ export default function Home() {
               Provide designers with access to stock photography and assets, and
               integrate with your DAM or brand management system.
             </p>
-            <p class="logos">
+            <p className="logos">
               <img src={SiliconPublishingLogo} />
               <img src={UIFacesLogo} />
               <img src={IconScoutLogo} />
@@ -72,7 +72,7 @@ export default function Home() {
               Help designers automate repetitive or tedious tasks. Unleash their
               creativity by enabling generative and data-driven designs.
             </p>
-            <p class="logos">
+            <p className="logos">
               <img src={AirTableLogo} />
               <img src={ImpekableLogo} />
               <img src={StarkLogo} />
@@ -93,7 +93,7 @@ export default function Home() {
               Make publishing and handoff a breeze by integrating with online
               services and content management systems.
             </p>
-            <p class="logos">
+            <p className="logos">
               <img src={DribbbleLogo} />
               <img src={BehanceLogo} />
               <img src={UserTestingLogo} />
@@ -104,7 +104,7 @@ export default function Home() {
               Enhance collaboration between designers and stakeholders by
               integrating with the workflow services your team uses.
             </p>
-            <p class="logos">
+            <p className="logos">
               <img src={TrelloLogo} />
               <img src={SlopeLogo} />
               <img src={InMotionNowLogo} />

@@ -38,8 +38,8 @@ export default function Header({ items = [] } = {}) {
   };
 
   return (
-    <heading style={styles.heading}>
-      <img style={styles.logo} src={logo} />
+    <header style={styles.heading}>
+      <img style={styles.logo} src={logo} alt="Adobe XD logo" />
       <h1 style={styles.h1}>Adobe XD Platform</h1>
       <ul style={styles.ul}>
         {items.map((item, idx) => (
@@ -50,6 +50,6 @@ export default function Header({ items = [] } = {}) {
           </li>
         ))}
       </ul>
-    </heading>
+    </header>
   );
 }
