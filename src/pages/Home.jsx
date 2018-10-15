@@ -4,12 +4,14 @@ import Header from "../components/Header.jsx";
 import Card from "../components/Card.jsx";
 import Cards from "../components/Cards.jsx";
 import Button from "../components/Button.jsx";
+import Footer from "../components/Footer.jsx";
 
-import createSVG from "../assets/undraw_blank_canvas_3rbb.svg";
-import buildSVG from "../assets/undraw_building_blocks_n0nc.svg";
-import shareSVG from "../assets/undraw_work_chat_erdt.svg";
-import devCommunitySVG from "../assets/undraw_co-working_825n.svg";
-import userCommunitySVG from "../assets/undraw_community_8nwl.svg";
+import createPNG from "../assets/xd_web_create.png";
+import buildPNG from "../assets/xd_web_build.png";
+import sharePNG from "../assets/xd_web_share.png";
+import devCommunitySVG from "../assets/S_Illu_DeveloperCommunity_180x120.svg";
+import userCommunitySVG from "../assets/S_Illu_UserCommunity_180x120.svg";
+import arrowSVG from "../assets/S_Illu_ArrowRight_180x30.svg";
 
 import SiliconPublishingLogo from "../assets/logos/SPI2.png";
 import UIFacesLogo from "../assets/logos/logo-web.svg";
@@ -26,25 +28,34 @@ import InMotionNowLogo from "../assets/logos/F.inmotionnowlogo.png";
 
 export default function Home() {
     const items = [
-      { label: "Overview", href: "#" },
-      { label: "Quick Start", href: "#" },
-      { label: "API Reference", href: "#" },
-      { label: "Samples", href: "#" },
-      { label: "Community", href: "#" },
-      //{ label: "I/O Console", href: "#" }
-      { label: "Submit Plugin", href: "#", type: "cta" }
+      { label: "Overview", href: "//adobexdplatform.com/plugin-docs/" },
+      { label: "Quick Start", href: "//adobexdplatform.com/plugin-docs/tutorials/quick-start" },
+      { label: "API Reference", href: "//adobexdplatform.com/plugin-docs/reference/how-to-read.html" },
+      { label: "Samples", href: "https://github.com/AdobeXD/plugin-samples" },
+      { label: "Community", href: "//adobexdplatform.com/plugin-docs/community.html" },
+      { label: "Submit Plugin", href: "https://console.adobe.io/plugins", type: "cta" }
     ];
+    const styles = {
+      arrow: {
+        position: "relative",
+        top: -50,
+        marginLeft: -80,
+        marginRight: -80
+      }
+    }
     return (
       <Fragment>
         <Header items={items} />
         <Cards heading={"Welcome to the world of XD plugin creation"}>
-          <Card title="Create" img={createSVG}>
+          <Card title="Create" img={createPNG}>
             Start by creating your plugin in the Adobe I/O Developer Console
           </Card>
-          <Card title="Build" img={buildSVG}>
+          <img src={arrowSVG} style={styles.arrow} alt="Right Arrow"/>
+          <Card title="Build" img={buildPNG}>
             Build and test your plugin inside Adobe XD
           </Card>
-          <Card title="Share" img={shareSVG}>
+          <img src={arrowSVG} style={styles.arrow} alt="Right Arrow"/>
+          <Card title="Share" img={sharePNG}>
             Share with others by submitting it to the XD plugin manager
           </Card>
         </Cards>
@@ -62,9 +73,9 @@ export default function Home() {
               integrate with your DAM or brand management system.
             </p>
             <p className="logos">
-              <img src={SiliconPublishingLogo} />
-              <img src={UIFacesLogo} />
-              <img src={IconScoutLogo} />
+              <img src={SiliconPublishingLogo} alt="Silicon Publishing logo" title="Silicon Publishing" />
+              <img src={UIFacesLogo} alt="UI Faces logo" title="UI Faces" />
+              <img src={IconScoutLogo} alt="Icon Scout logo" title="Icon Scout" />
             </p>
           </Card>
           <Card level="h4" title="Automation &amp; Utility">
@@ -73,9 +84,9 @@ export default function Home() {
               creativity by enabling generative and data-driven designs.
             </p>
             <p className="logos">
-              <img src={AirTableLogo} />
-              <img src={ImpekableLogo} />
-              <img src={StarkLogo} />
+              <img src={AirTableLogo} title="Airtable" alt="Airtable logo"/>
+              <img style={{height: 96, margin: "-32px 0"}} src={ImpekableLogo} alt="Impekable Logo" title="Impekable" />
+              <img src={StarkLogo} title="Stark" alt="Stark logo"/>
             </p>
           </Card>
         </Cards>
@@ -83,8 +94,8 @@ export default function Home() {
           backgroundColor="white"
           footing={
             <p style={{ textAlign: "center" }}>
-              See the <a href="#">documentation</a> for everything you can do.
-              Take a look at the <a href="#">roadmap</a> to see what's coming.
+              See the <a href="//adobexdplatform.com/plugin-docs">documentation</a> for everything you can do.
+              Take a look at the <a href="//adobexdplatform.com/plugin-docs/plugin-api-roadmap.html">roadmap</a> to see what's coming.
             </p>
           }
         >
@@ -94,9 +105,9 @@ export default function Home() {
               services and content management systems.
             </p>
             <p className="logos">
-              <img src={DribbbleLogo} />
-              <img src={BehanceLogo} />
-              <img src={UserTestingLogo} />
+              <img src={DribbbleLogo} title="Dribbble" alt="Dribbble logo" />
+              <img src={BehanceLogo} title="Behance" alt="Behance logo" />
+              <img src={UserTestingLogo} title="UserTesting" alt="UserTesting logo"/>
             </p>
           </Card>
           <Card level="h4" title="Designer &amp; Stakeholder Collaboration">
@@ -105,9 +116,9 @@ export default function Home() {
               integrating with the workflow services your team uses.
             </p>
             <p className="logos">
-              <img src={TrelloLogo} />
-              <img src={SlopeLogo} />
-              <img src={InMotionNowLogo} />
+              <img src={TrelloLogo} title="Trello" alt="Trello logo" />
+              <img src={SlopeLogo} title="Slope" alt="Slope logo" />
+              <img src={InMotionNowLogo} title="InMotionNow" alt="InMotionNow logo" />
             </p>
           </Card>
         </Cards>
@@ -118,25 +129,17 @@ export default function Home() {
               tricks, asking questions, and providing feedback to other
               developers.
             </p>
-            <a href="#">Join the community</a>
+            <a href="//adobexdplatform.com/plugin-docs/community.html">Join the community</a>
           </Card>
           <Card level="h4" title="User Community" img={userCommunitySVG}>
             <p>
               See how your plugins are being used, provided answers to user
               questions, and get inspiration for your next plugin idea.
             </p>
-            <a href="#">Learn more about users</a>
+            <a href="https://adobexd.uservoice.com/">Learn more about users</a>
           </Card>
         </Cards>
-        <Cards backgroundColor="#666666">
-          <p style={{ color: "#EAEAEA", padding: 48, paddingBottom: 0 }}>
-            &copy; Copyright 2018 Adobe. All rights reserved. Illustrations by{" "}
-            <a href="https://undraw.co/" target="_blank">
-              unDraw
-            </a>. Trademarks and reserved names used by permission of their
-            respective holders.
-          </p>
-        </Cards>
+        <Footer />
       </Fragment>
     );
   }

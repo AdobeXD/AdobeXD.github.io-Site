@@ -7,7 +7,7 @@ body {
 
 .App {
   font-family: "Roboto", Helvetica Neue, Helvetica, Arial, sans-serif;
-  min-width: 900px;
+  min-width: 1024px;
 }
 
 p {

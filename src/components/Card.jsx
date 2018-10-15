@@ -9,8 +9,8 @@ export default function Card({ img, title, children, level = "h3", imgAlt="" } =
       padding: 24
     },
     img: {
-      height: 128,
-      width: 128,
+      height: 154,
+      width: 150,
       margin: "auto auto"
     },
     h3: {
