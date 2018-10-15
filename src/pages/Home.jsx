@@ -59,7 +59,7 @@ export default function Home() {
             Share with others by submitting it to the XD plugin manager
           </Card>
         </Cards>
-        <Button href="#">Quick Start</Button>
+        <Button href="//adobexdplatform.com/plugin-docs/tutorials/quick-start">Quick Start</Button>
         <Cards
           heading={
             "Automate complex workflows, and integrate with other apps and services"
