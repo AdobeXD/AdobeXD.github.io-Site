@@ -46,7 +46,10 @@ export default function Home() {
     return (
       <Fragment>
         <Header items={items} />
-        <Cards heading={"Welcome to the world of XD plugin creation"}>
+        <Cards heading={"Welcome to the world of XD plugin creation"}
+        footing={
+          <Button href="//adobexdplatform.com/plugin-docs/tutorials/quick-start">Quick Start</Button>
+        }>
           <Card title="Create" img={createPNG}>
             Start by creating your plugin in the Adobe I/O Developer Console
           </Card>
@@ -59,7 +62,6 @@ export default function Home() {
             Share with others by submitting it to the XD plugin manager
           </Card>
         </Cards>
-        <Button href="//adobexdplatform.com/plugin-docs/tutorials/quick-start">Quick Start</Button>
         <Cards
           heading={
             "Automate complex workflows, and integrate with other apps and services"
