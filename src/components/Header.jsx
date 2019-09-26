@@ -33,8 +33,32 @@ export default function Header({ items = [] } = {}) {
       color: "#FF26BE",
       fontWeight: "bold",
       textDecoration: "none"
+    },
+    button: {
+      fontSize: "12px",
+      fontWeight: 700,
+      borderWidth: "2px",
+      borderRadius: "1rem",
+      paddingRight: "1rem",
+      paddingLeft: "1rem",
+      backgroundColor: "#1473e6",
+      borderColor: "#1473e6",
+      lineHeight: ".875rem",
+      textAlign: "center",
+      whiteSpace: "nowrap",
+      userSelect: "none",
+      border: "1px solid transparent",
+      padding: ".4375rem 1rem",
+      transition: "all .2s ease-in-out",
+      overflow: "visible",
+      textTransform: "none",
+      marginTop: "10px",
+      marginLeft: "450px",
+      width: "100px",
+      height: "40px",
+      borderRadius: "20px",
+      float: "right"
     }
-
   };
 
   return (
@@ -50,6 +74,9 @@ export default function Header({ items = [] } = {}) {
           </li>
         ))}
       </ul>
+      <a href="https://console.adobe.io/plugins">
+        <button style={styles.button} type="button"> I/O Console</button>
+      </a>
     </header>
   );
 }
