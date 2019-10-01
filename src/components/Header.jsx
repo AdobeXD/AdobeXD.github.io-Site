@@ -8,7 +8,8 @@ export default function Header({ items = [] } = {}) {
       height: 96,
       display: "flex",
       flexDirection: "row",
-      alignItems: "baseline"
+      alignItems: "center",
+      marginLeft: 120
     },
     logo: {
       height: 48,
@@ -22,21 +23,28 @@ export default function Header({ items = [] } = {}) {
       fontSize: 24
     },
     ul: {
-      listStyle: "none"
+      listStyle: "none",
+      marginLeft: 50,
+      marginTop: 15
     },
     li: {
       display: "inline-block",
       marginRight: 24,
-      fontSize: 14
+      fontSize: 14,
+      fontFamily: "roboto, medium"
     },
     a: {
-      color: "#FF26BE",
-      fontWeight: "bold",
-      textDecoration: "none"
+      color: "#323232",
+      textDecoration: "none",
+      fontWeight: 500
+    },
+    aButton: {
+      marginLeft: "auto",
+      marginRight: "10%"
     },
     button: {
+      color: "white",
       fontSize: "12px",
-      fontWeight: 700,
       borderWidth: "2px",
       borderRadius: "1rem",
       paddingRight: "1rem",
@@ -52,12 +60,11 @@ export default function Header({ items = [] } = {}) {
       transition: "all .2s ease-in-out",
       overflow: "visible",
       textTransform: "none",
-      marginTop: "10px",
-      marginLeft: "450px",
-      width: "100px",
+      marginTop: "5px",
+      marginLeft: "auto",
+      width: "200px",
       height: "40px",
-      borderRadius: "20px",
-      float: "right"
+      borderRadius: "24px"
     }
   };
 
@@ -74,8 +81,8 @@ export default function Header({ items = [] } = {}) {
           </li>
         ))}
       </ul>
-      <a href="https://console.adobe.io/plugins">
-        <button style={styles.button} type="button"> I/O Console</button>
+      <a style={styles.aButton} href="https://console.adobe.io/plugins">
+        <button style={styles.button} type="button"> I/O Developer Console</button>
       </a>
     </header>
   );
