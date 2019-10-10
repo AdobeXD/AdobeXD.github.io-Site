@@ -81,9 +81,9 @@ export default function Header({ items = [] } = {}) {
           </li>
         ))}
       </ul>
-      <a style={styles.aButton} href="https://console.adobe.io/plugins">
+      {/* <a style={styles.aButton} href="https://console.adobe.io/plugins">
         <button style={styles.button} type="button"> I/O Developer Console</button>
-      </a>
+      </a> */}
     </header>
   );
 }

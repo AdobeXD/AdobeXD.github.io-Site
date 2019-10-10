@@ -2,11 +2,21 @@ import React, { Fragment } from "react";
 
 import Header from "../components/Header.jsx";
 import Card from "../components/Card.jsx";
+import FeatureCard from "../components/FeatureCard.jsx";
+import FeatureBoard from "../components/FeatureBoard.jsx";
 import Cards from "../components/Cards.jsx";
+import Description from "../components/Description.jsx";
 import Button from "../components/Button.jsx";
 import Footer from "../components/Footer.jsx";
 
 import createPNG from "../assets/xd_web_create.png";
+import mainPNG from "../assets/main@2x.png";
+import updatePluginPNG from "../assets/update-your-plugin@2x.png";
+import logoPNG from "../assets/logo.png";
+import featureLogoPNG from "../assets/feature-plugin@2x.png";
+import marketplacePNG from "../assets/Marketplace@3x.png";
+import pluginPNG from "../assets/Essential-Plugins@2x.png";
+import cloudPNG from "../assets/Connect-Your-Tools@2x.png";
 import buildPNG from "../assets/xd_web_build.png";
 import sharePNG from "../assets/xd_web_share.png";
 import devCommunitySVG from "../assets/S_Illu_DeveloperCommunity_180x120.svg";
@@ -33,112 +43,113 @@ export default function Home() {
     { label: "Community & Support", href: "//adobexdplatform.com/community-and-support" }
   ];
   const styles = {
-    arrow: {
-      position: "relative",
-      top: -50,
-      marginLeft: -80,
-      marginRight: -80
+    left: {
+      width: "55%",
+      height: "100%"
+    },
+    right: {
+      width: "35%",
+      marginTop: -100,
+      marginLeft: 100
+    },
+    row: {
+      display: "flex",
+      flexDirection: "row",
+      marginBottom: 150
+    },
+    market: {
+      width: "100%",
+      height: "100%",
+      boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"
     }
   }
   return (
     <Fragment>
       <Header items={items} />
-      <Cards heading={"Welcome to the world of XD plugin creation"}
-        footing={
-          <Button href="//adobexdplatform.com/plugin-docs/tutorials/quick-start">Quick Start</Button>
-        }>
-        <Card title="Create" img={createPNG}>
-          Start by creating your plugin in the Adobe I/O Developer Console
-          </Card>
-        <img src={arrowSVG} style={styles.arrow} alt="Right Arrow" />
-        <Card title="Build" img={buildPNG}>
-          Build and test your plugin inside Adobe XD
-          </Card>
-        <img src={arrowSVG} style={styles.arrow} alt="Right Arrow" />
-        <Card title="Share" img={sharePNG}>
-          Share with others by submitting it to the XD plugin manager
-          </Card>
-      </Cards>
-      <Cards
-        heading={
-          "Automate complex workflows, and integrate with other apps and services"
-        }
-        level="h2"
-        backgroundColor="white"
-      >
-        <Card level="h4" title="Asset Management &amp; Import">
-          <p>
-            Provide designers with access to stock photography and assets, and
-            integrate with your DAM or brand management system.
-            </p>
-          <p className="logos">
-            <img src={SiliconPublishingLogo} alt="Silicon Publishing logo" title="Silicon Publishing" />
-            <img src={UIFacesLogo} alt="UI Faces logo" title="UI Faces" />
-            <img src={IconScoutLogo} alt="Icon Scout logo" title="Icon Scout" />
-          </p>
-        </Card>
-        <Card level="h4" title="Automation &amp; Utility">
-          <p>
-            Help designers automate repetitive or tedious tasks. Unleash their
-            creativity by enabling generative and data-driven designs.
-            </p>
-          <p className="logos">
-            <img src={AirTableLogo} title="Airtable" alt="Airtable logo" />
-            <img style={{ height: 96, margin: "-32px 0" }} src={ImpekableLogo} alt="Impekable Logo" title="Impekable" />
-            <img src={StarkLogo} title="Stark" alt="Stark logo" />
-          </p>
+      <Cards justifyContent="flex-start" height={580} wrapperPaddingBottom={0}>
+        <Description width="55%" textFontSize={45} tagFontSize={70} title="Adobe XD Platform" text="Push the boundaries of design work">
+        </Description>
+        <Card level="h4" img={mainPNG} marginLeft={100} width="35%" imgWidth="100%" imgHeight="100%">
         </Card>
       </Cards>
-      <Cards
-        backgroundColor="white"
-        footing={
-          <p style={{ textAlign: "center" }}>
-            See the <a href="//adobexdplatform.com/plugin-docs">documentation</a> for everything you can do.
-              Take a look at the <a href="//adobexdplatform.com/plugin-docs/plugin-api-roadmap.html">roadmap</a> to see what's coming.
-            </p>
-        }
-      >
-        <Card level="h4" title="Publish &amp; Handoff">
-          <p>
-            Make publishing and handoff a breeze by integrating with online
-            services and content management systems.
-            </p>
-          <p className="logos">
-            <img src={DribbbleLogo} title="Dribbble" alt="Dribbble logo" />
-            <img src={BehanceLogo} title="Behance" alt="Behance logo" />
-            <img src={UserTestingLogo} title="UserTesting" alt="UserTesting logo" />
-          </p>
+      <Cards backgroundColor="white" height={200} justifyContent="center">
+        <Description marginTop={100} width={1000} color="black" align="center" tagFontSize={45} textFontSize={45} title="Documentation" text="Everything you need to build and share your work">
+        </Description>
+      </Cards>
+      <Cards backgroundColor="white" height={400} justifyContent="center" marginLeft="20%" marginRight="20%">
+        <Card level="h4" img={pluginPNG} width="auto" title="Plugin APIs" children="Bring your product to XD">
         </Card>
-        <Card level="h4" title="Designer &amp; Stakeholder Collaboration">
-          <p>
-            Enhance collaboration between designers and stakeholders by
-            integrating with the workflow services your team uses.
-            </p>
-          <p className="logos">
-            <img src={TrelloLogo} title="Trello" alt="Trello logo" />
-            <img src={SlopeLogo} title="Slope" alt="Slope logo" />
-            <img src={InMotionNowLogo} title="InMotionNow" alt="InMotionNow logo" />
-          </p>
+        <Card level="h4" img={cloudPNG} width="auto" marginLeft={0} title="Cloud APIs" children="Bring XD designs to your product">
         </Card>
       </Cards>
-      <Cards heading={"Community Resources"} level={"h2"}>
-        <Card level="h4" title="Developer Community" img={devCommunitySVG}>
-          <p>
-            Engage with other Adobe XD Platform developers by sharing tips and
-            tricks, asking questions, and providing feedback to other
-            developers.
-            </p>
-          <a href="//adobexdplatform.com/plugin-docs/community.html">Join the community</a>
-        </Card>
-        <Card level="h4" title="User Community" img={userCommunitySVG}>
-          <p>
-            See how your plugins are being used, provided answers to user
-            questions, and get inspiration for your next plugin idea.
-            </p>
-          <a href="https://adobexd.uservoice.com/">Learn more about users</a>
-        </Card>
+      <Cards height={200} justifyContent="flex-start">
+        <Description marginTop={50} tagFontSize={50} color="white" title="What you can build" >
+        </Description>
+      </Cards>
+      <Cards height={30} justifyContent="flex-start">
+        <Description width="100%" tagFontSize={30} color="white" rightTag="Create your own plugin" title="XD Plugins" >
+        </Description>
+      </Cards>
+      <Cards height={100} justifyContent="flex-start">
+        <Description width={839} textFontSize={24} color="white" text="Designers who use Adobe XD rely on plugins to help them move even faster and deliver incredible designs. XD plugins provide users with new functionality built by developers of all sizes, from all over the world.">
+        </Description>
+      </Cards>
+      <Cards height={330} marginLeft={16}>
+        <FeatureCard name="Frontify" img={createPNG} width="13%" height="100%" backgroundColor="rgba( 0, 0, 0, 0.05 )" title="Collaboration" imgHeight={80} imgWidth={80}>
+
+        </FeatureCard>
+        <FeatureCard name="Frontify" img={createPNG} width="13%" height="100%" backgroundColor="rgba( 0, 0, 0, 0.05 )" title="Tools & Automation" imgHeight={80} imgWidth={80} marginLeft={20}>
+
+        </FeatureCard>
+        <FeatureCard name="Frontify" img={createPNG} width="13%" height="100%" backgroundColor="rgba( 0, 0, 0, 0.05 )" title="Publish & Handoff" imgHeight={80} imgWidth={80} marginLeft={20}>
+
+        </FeatureCard>
+        <FeatureCard name="Frontify" img={createPNG} width="13%" height="100%" backgroundColor="rgba( 0, 0, 0, 0.05 )" title="Usability & Testing" imgHeight={80} imgWidth={80} marginLeft={20}>
+
+        </FeatureCard>
+        <FeatureCard name="Frontify" img={createPNG} width="13%" height="100%" backgroundColor="rgba( 0, 0, 0, 0.05 )" title="Design Assets" imgHeight={80} imgWidth={80} marginLeft={20}>
+
+        </FeatureCard>
+      </Cards>
+      <Cards height={30} justifyContent="flex-start">
+        <Description width="100%" tagFontSize={30} color="white" rightTag="Start integrating today" title="XD Cloud Integrations" >
+        </Description>
+      </Cards>
+      <Cards height={450} marginLeft={16} textAlign="left">
+        <FeatureBoard text="The Adobe XD and Jira Software Cloud integration lets designers associate XD prototypes and design specs with Jira issues to keep projects organized and provide developers with everything they need to know in the environment they know." title="Design & develop together" color="white" img={logoPNG} img2={featureLogoPNG} tagFontSize={24} height="90%" backgroundColor="rgba( 0, 0, 0, 0.05 )" imgHeight="100%" imgWidth="100%">
+
+        </FeatureBoard>
+      </Cards>
+      <Cards height={250} backgroundColor="#F4F4F4" justifyContent="flex-start">
+        <Description width={839} textFontSize={24} color="black" title="Showcase it in XD" text="Adobe XD brings plugin and integration discovery right to where designers spend their time: in Adobe XD. The XD Plugin Manager is the place to be if you want to reach XD users with your product.">
+        </Description>
+      </Cards>
+      <Cards height={600} backgroundColor="#F4F4F4" justifyContent="flex-start">
+        <div style={styles.left}>
+          <img src={marketplacePNG} style={styles.market}></img>
+        </div>
+        <div style={styles.right}>
+          <Description marginTop={50} tagFontSize={24} width="100%" textFontSize={24} color="black" title="List your product" text="You can list your plugins and integrations with a description, screenshots, icons, help URL, localization, and more.">
+          </Description>
+          <Description marginTop={50} tagFontSize={24} width="100%" textFontSize={24} color="black" title="Link to your listing" text="The XD Plugin Manager supports deep links, meaning you can create a unique URL that opens the XD Plugin Manager right to your listing.">
+          </Description>
+          <Description marginTop={50} tagFontSize={24} width="100%" textFontSize={24} color="black" title="Get discovered" text="Users know that the place to find XD plugins and integrations is the XD Plugin Manager, where they can browse, search, and manage their plugins.">
+          </Description>
+        </div>
+      </Cards>
+      <Cards height={850} backgroundColor="white" justifyContent="flex-start">
+        <Description marginTop={50} tagFontSize={50} width="100%" color="black" title="Community & Support">
+        </Description>
+        <div style={styles.row}>
+          <Card level="h4" img={mainPNG} marginLeft={16} imgWidth="100%" imgHeight="100%" children="Join the XD Platform forums">
+          </Card>
+          <Card level="h4" img={mainPNG} marginLeft={100} imgWidth="100%" imgHeight="100%" children="Sign up for the CC Developer Newsletter">
+          </Card>
+          <Card level="h4" img={mainPNG} marginLeft={100} imgWidth="100%" imgHeight="100%" children="Visit Adobe XD on GitHub">
+          </Card>
+        </div>
       </Cards>
       <Footer />
-    </Fragment>
+    </Fragment >
   );
 }

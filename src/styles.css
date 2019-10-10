@@ -17,7 +17,7 @@ p {
 }
 
 a {
-  color: #1592e6;
+  color: #FFFFFF;
   text-decoration: none;
   font-size: 14px;
 }
@@ -39,11 +39,11 @@ a:hover {
 }
 
 .footer {
-  padding: 48px;
   padding-bottom: 0;
   color: #B8B8B8;
   text-align: right;
   width: 100%;
+  margin-top: 16px;
 }
 
 .footer a {
