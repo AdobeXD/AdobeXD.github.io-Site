@@ -1,12 +1,13 @@
 import React from "react";
 
-export default function Description({ align = "left", marginTop, title, text, color = "white", highlight, rightTag, width = 739, tagFontSize = 50, textFontSize = 24 } = {}) {
+export default function Description({ center = false, padding = 20, align = "left", marginTop, title, text, color = "white", highlight, rightTag, width = 739, tagFontSize = 50, textFontSize = 15 } = {}) {
     const styles = {
         wrapper: {
             textAlign: align,
             flex: "0 1 auto",
             width,
-            marginTop
+            marginTop,
+            padding
         },
         tag: {
             color,
@@ -37,18 +38,30 @@ export default function Description({ align = "left", marginTop, title, text, co
             color,
             display: "inline-block",
             float: "right",
-            fontSize: 45,
-            marginTop: -14
+            fontSize: 20,
+            marginTop: -3
         }
     };
+    if (center) {
+        return (
+            <div class="center">
+                {highlight && <p style={styles.highlight}>{highlight}</p>}
+                {title && <p style={styles.tag}>{title}</p>}
+                {rightTag && <p style={styles.arrow}>></p>}
+                {rightTag && <p style={styles.rightTag}>{rightTag}</p>}
+                {text && <p style={styles.text}>{text}</p>}
+            </div>
+        );
+    } else {
+        return (
+            <div style={styles.wrapper}>
+                {highlight && <p style={styles.highlight}>{highlight}</p>}
+                {title && <p style={styles.tag}>{title}</p>}
+                {rightTag && <p style={styles.arrow}>></p>}
+                {rightTag && <p style={styles.rightTag}>{rightTag}</p>}
+                {text && <p style={styles.text}>{text}</p>}
+            </div>
+        );
+    }
 
-    return (
-        <div style={styles.wrapper}>
-            {highlight && <p style={styles.highlight}>{highlight}</p>}
-            {title && <p style={styles.tag}>{title}</p>}
-            {rightTag && <p style={styles.arrow}>></p>}
-            {rightTag && <p style={styles.rightTag}>{rightTag}</p>}
-            {text && <p style={styles.text}>{text}</p>}
-        </div>
-    );
 }

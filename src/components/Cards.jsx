@@ -9,14 +9,16 @@ export default function Cards({
   backgroundImage,
   justifyContent = "center",
   height = 648,
-  paddingLeft = 100,
-  paddingRight = 100,
+  paddingLeft = "15%",
+  paddingRight = "15%",
   marginLeft,
   marginRight,
   wrapperPaddingBottom = 48,
   width = 1750,
   flexDirection = "row",
-  textAlign = "center"
+  textAlign = "center",
+  paddingTop,
+  minWidth = 800
 } = {}) {
   const styles = {
     wrapper: {
@@ -26,6 +28,7 @@ export default function Cards({
       paddingBottom: wrapperPaddingBottom,
       paddingLeft,
       paddingRight,
+      paddingTop,
       height
     },
     h1: {
@@ -54,11 +57,12 @@ export default function Cards({
       alignItems: "center",
       textAlign,
       flexWrap: "wrap",
-      minWidth: 900,
+      minWidth,
       maxWidth: width,
       marginLeft,
       marginRight,
       padding: "12 24",
+      paddingTop,
       height: "100%"
     }
   };

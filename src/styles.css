@@ -71,3 +71,49 @@ a .evidon-consent-link-text {
 a:hover .evidon-consent-link-text {
   color: #EAEAEA;
 }
+
+@media screen and (min-width: 800px) {
+  .left {
+    display: none;
+    width: 0%;
+    height: "100%";
+    padding-left: 36;
+  }
+  .right {
+    margin: auto;
+    width: 50%;
+  }
+  .center {
+    margin-top: 50;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    flex: "0 1 auto";
+    padding: 20;
+    width: 50%;
+
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .left {
+    display: block;
+    width: 550px;
+    height: "100%";
+    padding-left: 36;
+  }
+  .right {
+    width: 25%;
+    margin-left: 50px;
+    margin-top: -5%;
+  }
+  .center {
+    margin-top: 50;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+    flex: "0 1 auto";
+    padding: 20;
+    width: 50%;
+  }
+}
