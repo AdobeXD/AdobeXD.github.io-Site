@@ -39,7 +39,8 @@ export default function Description({ center = false, padding = 20, align = "lef
             display: "inline-block",
             float: "right",
             fontSize: 20,
-            marginTop: -3
+            marginTop: -2,
+            marginLeft: 0
         }
     };
     if (center) {

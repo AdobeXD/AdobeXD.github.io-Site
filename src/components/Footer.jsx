@@ -25,7 +25,7 @@ export default function Footer() {
         }
     }
     return (
-        <Cards height={styles.footer.height} backgroundColor="#242F6F" width="100%" wrapperPaddingBottom={0} justifyContent="flex-start" flexDirection="row">
+        <Cards height={styles.footer.height} backgroundColor="#323232" width="100%" wrapperPaddingBottom={0} justifyContent="flex-start" flexDirection="row">
             <p style={styles.left}>
                 <a target="_blank" rel="noopener noreferrer" href="https://www.adobe.com/privacy.html">
                     Privacy

@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Card({ bodyWidth = "100%", link, width, img, title, children, level = "h3", imgAlt = "", marginLeft = 0, imgWidth = 260, imgHeight = 260 } = {}) {
+export default function Card({ space = 30, top = "auto", imgPosition = "static", bodyWidth = "100%", link, width, img, title, children, level = "h3", imgAlt = "", marginLeft = 0, imgWidth = 260, imgHeight = 260 } = {}) {
   const styles = {
     wrapper: {
       // flexDirection: "column",
@@ -15,7 +15,9 @@ export default function Card({ bodyWidth = "100%", link, width, img, title, chil
     img: {
       height: imgHeight,
       width: imgWidth,
-      marginBottom: 15
+      marginBottom: space,
+      position: imgPosition,
+      top
     },
     h3: {
       textAlign: "center",
@@ -27,8 +29,8 @@ export default function Card({ bodyWidth = "100%", link, width, img, title, chil
     h4: {
       textAlign: "center",
       fontSize: 24,
-      fontWeight: "bold",
-      color: "#1473E6",
+      // fontWeight: "bold",
+      // color: "#1473E6",
       margin: 0
     },
     body: {
@@ -37,7 +39,7 @@ export default function Card({ bodyWidth = "100%", link, width, img, title, chil
       textAlign: "center",
       fontWeight: "normal",
       fontSize: 15,
-      marginTop: 20,
+      marginTop: space,
       width: bodyWidth
     },
     link: {
