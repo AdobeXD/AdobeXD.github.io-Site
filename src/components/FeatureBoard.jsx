@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function FeatureBoard({ link, text, backgroundColor, height, width, img, title, img2, imgAlt2, imgAlt = "", marginLeft = 0, imgWidth = 260, imgHeight = 260 } = {}) {
+export default function FeatureBoard({ link, linkUrl, text, backgroundColor, height, width, img, title, img2, imgAlt2, imgAlt = "", marginLeft = 0, imgWidth = 260, imgHeight = 260 } = {}) {
     const styles = {
         wrapper: {
             display: "flex",
@@ -59,7 +59,7 @@ export default function FeatureBoard({ link, text, backgroundColor, height, widt
                 {img && <img style={styles.img} src={img} alt={imgAlt} />}
                 {title && <p style={styles.title}>{title}</p>}
                 {text && <p style={styles.text}>{text}</p>}
-                {link && <a style={styles.link}>{link}</a>}
+                {link && <a style={styles.link} href={linkUrl}>{link}</a>}
             </div>
             <div style={styles.rightBox}>
                 <iframe style={styles.img2} width="466" height="262" src="https://www.youtube.com/embed/bEIbaZ8DtcY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

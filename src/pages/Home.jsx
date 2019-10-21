@@ -56,6 +56,7 @@ const cloudConsoleLink = "https://adobe.allegiancetech.com/cgi-bin/qwebcorporate
 const forumLink = "https://forums.adobexdplatform.com";
 const newsletterLink = "https://www.adobe.com/subscription/ccdevnewsletter.html"
 const githubLink = "https://github.com/AdobeXD";
+const blogUrl = "https://theblog.adobe.com/adobe-xd-for-jira-cloud-streamline-design-to-development-workflows/";
 
 export default function Home() {
   const items = [
@@ -127,7 +128,7 @@ export default function Home() {
         </Description>
       </Cards>
       <Cards height="auto" marginLeft={32} textAlign="left">
-        <FeatureBoard link="Learn more" text="The Adobe XD and Jira Software Cloud integration uses the XD Cloud Content APIs to let designers associate XD prototypes and design specs with Jira issues. This keeps projects organized while providing developers with everything they need to know in the environment they know." title="Bringing designers and developers together" color="white" img={jiraSVG} imgAlt="placeholder" img2={featureLogoPNG} imgAlt2="placeholder" tagFontSize={14} height="100%" backgroundColor="rgba( 0, 0, 0, 0.05 )" imgHeight={60} imgWidth={300}>
+        <FeatureBoard link="Learn more" linkUrl={blogUrl} text="The Adobe XD and Jira Software Cloud integration uses the XD Cloud Content APIs to let designers associate XD prototypes and design specs with Jira issues. This keeps projects organized while providing developers with everything they need to know in the environment they know." title="Bringing designers and developers together" color="white" img={jiraSVG} imgAlt="placeholder" img2={featureLogoPNG} imgAlt2="placeholder" tagFontSize={14} height="100%" backgroundColor="rgba( 0, 0, 0, 0.05 )" imgHeight={60} imgWidth={300}>
         </FeatureBoard>
       </Cards>
       <Cards paddingTop={30} marginLeft={25} width={760} wrapperPaddingBottom={20} height="auto" backgroundColor="#F4F4F4" justifyContent="flex-start">
