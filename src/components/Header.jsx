@@ -9,15 +9,14 @@ export default function Header({ items = [] } = {}) {
       display: "flex",
       flexDirection: "row",
       alignItems: "center",
-      marginLeft: 120
+      // marginLeft: "10%",
+      paddingLeft: "5%"
     },
     logo: {
       height: 48,
       width: 48,
-      margin: 24,
-      marginTop: 10,
-      position: "relative",
-      top: 14
+      margin: "24px 24px 24px 0",
+      position: "relative"
     },
     h1: {
       fontSize: 24

@@ -10,12 +10,16 @@ export default function FeatureCard({ body, backgroundColor, height, width, img,
             backgroundColor,
             height,
             marginBottom: 30,
-            padding: "auto"
+            padding: "auto",
+            position: "relative",
+            padding: 15
         },
         img: {
             height: imgHeight,
             width: imgWidth,
-            margin: "50px 0px 20px"
+            position: "absolute",
+            top: "70%",
+            left: 32
         },
         name: {
             display: "inline-block",
@@ -37,12 +41,14 @@ export default function FeatureCard({ body, backgroundColor, height, width, img,
             fontSize: 15,
             textAlign: "left",
             marginTop: 50,
-            fontWeight: "normal"
+            fontWeight: "normal",
+            position: "absolute",
+            top: "20%"
         },
         box: {
             display: "flex",
             alignItems: "center",
-            position: "relative",
+            // position: "relative",
             top: "40%",
             marginLeft: 30,
             flex: "0 0 20%"
@@ -52,10 +58,10 @@ export default function FeatureCard({ body, backgroundColor, height, width, img,
         <div style={styles.wrapper}>
             {title && <p style={styles.title}>{title}</p>}
             {body && <p style={styles.body}>{body}</p>}
-            <div style={styles.box}>
-                {img && <img style={styles.img} src={img} alt={imgAlt} />}
-                {/* {name && <p style={styles.name}>{name}</p>} */}
-            </div>
+            {/* <div style={styles.box}> */}
+            {img && <img style={styles.img} src={img} alt={imgAlt} />}
+            {/* {name && <p style={styles.name}>{name}</p>} */}
+            {/* </div> */}
         </div>
     );
 }

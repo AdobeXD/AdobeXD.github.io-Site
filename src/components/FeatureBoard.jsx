@@ -36,16 +36,16 @@ export default function FeatureBoard({ link, text, backgroundColor, height, widt
             display: "flex",
             flexDirection: "column",
             textAign: "left",
-            width: "50%",
+            width: "40%",
             marginBottom: 40
         },
         rightBox: {
-            width: "40%",
+            width: "50%",
             height: 300
         },
         img2: {
-            height: "90%",
-            width: "100%",
+            height: 262,
+            width: 466,
             marginLeft: "15%",
             verticalAlign: "middle"
         },
