@@ -134,7 +134,7 @@ export default function Home() {
           </Description>
           <Description padding={0} marginTop={36} tagFontSize={15} width="100%" textFontSize={15} color="black" title="Link to your listing" text="You'll get a unique URL that opens the XD Plugin Manager right to your plugin listing.">
           </Description>
-          <Description padding={0} marginTop={36} tagFontSize={15} width="100%" textFontSize={15} color="black" title="Get discovered" text="Users can browse and search for any plugin you publish in the XD Plugin Manager.">
+          <Description padding={0} marginTop={36} tagFontSize={15} width="100%" textFontSize={15} color="black" title="Get discovered" text="Users can visit the XD Plugin Manager to browse and search for plugins you publish.">
           </Description>
         </div>
       </Cards>
