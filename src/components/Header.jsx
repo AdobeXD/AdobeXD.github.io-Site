@@ -18,15 +18,16 @@ export default function Header({ items = [] } = {}, home) {
       zIndex: 1030
     },
     logo: {
-      height: 48,
-      width: 48,
-      margin: "24px 24px 24px 0",
+      height: 44,
+      width: 45,
+      margin: "27px 24px 24px 2px",
       position: "relative"
     },
     h1: {
       fontSize: 24,
       fontFamily: "roboto, medium",
-      lineHeight: "normal"
+      lineHeight: "normal",
+      marginTop: 19
     },
     ul: {
       listStyle: "none",
