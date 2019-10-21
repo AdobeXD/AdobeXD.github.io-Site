@@ -61,7 +61,7 @@ const blogUrl = "https://theblog.adobe.com/adobe-xd-for-jira-cloud-streamline-de
 export default function Home() {
   const items = [
     { label: "Plugin APIs", href: pluginLink },
-    { label: "Cloud Contents APIs", href: cloudLink },
+    { label: "Cloud Content APIs", href: cloudLink },
     { label: "Community & Support", href: communityLink }
   ];
   const styles = {
