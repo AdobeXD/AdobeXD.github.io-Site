@@ -15,6 +15,7 @@ import designSVG from "../assets/design.svg";
 import toolsPNG from "../assets/tools.png";
 import usabilityPNG from "../assets/usability.png";
 import publishSVG from "../assets/publish.svg";
+import chevronSVG from "../assets/chevron.svg";
 import forumSVG from "../assets/forum.svg";
 import newsletterSVG from "../assets/newsletter.svg";
 import githubSVG from "../assets/github.svg";
@@ -70,10 +71,10 @@ export default function Home() {
   return (
     <Fragment>
       <Header items={items} />
-      <Cards justifyContent="flex-start" height={440} wrapperPaddingBottom={0}>
+      <Cards justifyContent="flex-start" height={440} wrapperPaddingBottom={0} buffer={96}>
         <Description padding={0} width="50%" textFontSize={24} tagFontSize={45} title="Adobe XD Platform" text="Push the boundaries of design work even further">
         </Description>
-        <Card level="h4" space={0} img={mainPNG} marginLeft="15%" width="30%" imgWidth={463} imgHeight={310}>
+        <Card level="h4" space={0} img={mainPNG} imgAlt="placeholder" marginLeft="15%" width="30%" imgWidth={463} imgHeight={310}>
         </Card>
       </Cards>
       <Cards backgroundColor="white" height="auto" justifyContent="center" wrapperPaddingBottom={5}>
@@ -81,9 +82,9 @@ export default function Home() {
         </Description>
       </Cards>
       <Cards wrapperPaddingBottom={20} marginLeft={"20%"} marginRight={"20%"} minWidth={500} paddingTop={0} backgroundColor="white" height="auto" justifyContent="center">
-        <Card level="h4" bodyWidth={400} space={20} img={pluginPNG} imgWidth={243} imgHeight={162} width="40%" title="Plugin APIs" children="Bring new capabilities to XD" link="Create a plugin">
+        <Card level="h4" bodyWidth={400} space={20} img={pluginPNG} imgAlt="placeholder" imgWidth={243} imgHeight={162} width="40%" title="Plugin APIs" children="Bring new capabilities to XD" link="Create a plugin">
         </Card>
-        <Card level="h4" bodyWidth={400} space={20} img={cloudPNG} imgWidth={243} imgHeight={162} width="40%" marginLeft={0} title="Cloud Content APIs" children="Connect XD designs to your product" link="Start integrating">
+        <Card level="h4" bodyWidth={400} space={20} img={cloudPNG} imgAlt="placeholder" imgWidth={243} imgHeight={162} width="40%" marginLeft={0} title="Cloud Content APIs" children="Connect XD designs to your product" link="Start integrating">
         </Card>
       </Cards>
       <Cards height="auto" justifyContent="flex-start" wrapperPaddingBottom={10}>
@@ -91,33 +92,32 @@ export default function Home() {
         </Description>
       </Cards>
       <Cards height={100} justifyContent="flex-start" wrapperPaddingBottom={15}>
-        <Description width="100%" tagFontSize={15} color="white" rightTag="Create your own plugin" title="XD Plugins" text="Developers extend XD's core functionality with these types of plugins and more, all powered by the XD Plugin APIs." >
+        <Description arrowSVG={chevronSVG} imgAlt="placeholder" width="100%" tagFontSize={15} color="white" rightTag="Create your own plugin" title="XD Plugins" text="Developers extend XD's core functionality with these types of plugins and more, all powered by the XD Plugin APIs." >
         </Description>
       </Cards>
       <Cards height="auto" marginLeft={32} wrapperPaddingBottom={10}>
-        <FeatureCard body="Enhance teamwork with connected workflows" img={collaborationPNG} width="20%" height={247} backgroundColor="rgba( 0, 0, 0, 0.05 )" title="Collaboration" imgHeight={41} imgWidth={41}>
+        <FeatureCard body="Connect designers with their teams and stakeholders" img={collaborationPNG} imgAlt="placeholder" width="20%" height={247} backgroundColor="rgba( 0, 0, 0, 0.05 )" title="Collaboration" imgHeight={41} imgWidth={41}>
 
         </FeatureCard>
-        <FeatureCard body="Accelerate design work with new and unique features" img={toolsPNG} width="20%" height={247} backgroundColor="rgba( 0, 0, 0, 0.05 )" title="Tools & Automation" imgHeight={41} imgWidth={41} marginLeft={20}>
+        <FeatureCard body="Accelerate design work with new and unique features" img={toolsPNG} imgAlt="placeholder" width="20%" height={247} backgroundColor="rgba( 0, 0, 0, 0.05 )" title="Tools & Automation" imgHeight={41} imgWidth={41} marginLeft={20}>
 
         </FeatureCard>
-        <FeatureCard body="Enable designers to share their work anywhere" img={publishSVG} width="20%" height={247} backgroundColor="rgba( 0, 0, 0, 0.05 )" title="Publish & Handoff" imgHeight={41} imgWidth={41} marginLeft={20}>
+        <FeatureCard body="Enable designers to share their work anywhere" img={publishSVG} imgAlt="placeholder" width="20%" height={247} backgroundColor="rgba( 0, 0, 0, 0.05 )" title="Publish & Handoff" imgHeight={41} imgWidth={41} marginLeft={20}>
 
         </FeatureCard>
-        <FeatureCard body="Help designers ensure their work connects with users" img={usabilityPNG} width="20%" height={247} backgroundColor="rgba( 0, 0, 0, 0.05 )" title="Usability & Testing" imgHeight={41} imgWidth={41} marginLeft={20}>
+        <FeatureCard body="Help designers ensure their work connects with users" img={usabilityPNG} imgAlt="placeholder" width="20%" height={247} backgroundColor="rgba( 0, 0, 0, 0.05 )" title="Usability & Testing" imgHeight={41} imgWidth={41} marginLeft={20}>
 
         </FeatureCard>
-        <FeatureCard body="Provide direct access to icons, images, data, and more" img={designSVG} width="20%" height={247} backgroundColor="rgba( 0, 0, 0, 0.05 )" title="Design Assets" imgHeight={41} imgWidth={41} marginLeft={20}>
+        <FeatureCard body="Provide direct access to icons, images, data, and more" img={designSVG} imgAlt="placeholder" width="20%" height={247} backgroundColor="rgba( 0, 0, 0, 0.05 )" title="Design Assets" imgHeight={41} imgWidth={41} marginLeft={20}>
 
         </FeatureCard>
       </Cards>
       <Cards height={100} justifyContent="flex-start" wrapperPaddingBottom={10}>
-        <Description width="100%" tagFontSize={15} color="white" rightTag="Start integrating today" title="XD Cloud Content Integrations" text="With the XD Cloud Content APIs, you can bring design work created in XD directly to your product or service.">
+        <Description arrowSVG={chevronSVG} imgAlt="placeholder" width="100%" tagFontSize={15} color="white" rightTag="Start integrating today" title="XD Cloud Content Integrations" text="With the XD Cloud Content APIs, you can bring design work created in XD directly to your product or service.">
         </Description>
       </Cards>
       <Cards height="auto" marginLeft={32} textAlign="left">
-        <FeatureBoard link="Learn more" text="The Adobe XD and Jira Software Cloud integration uses the XD Cloud Content APIs to let designers associate XD prototypes and design specs with Jira issues. This keeps projects organized while providing developers with everything they need to know in the environment they know." title="Bringing designers and developers together" color="white" img={jiraSVG} img2={featureLogoPNG} tagFontSize={14} height="100%" backgroundColor="rgba( 0, 0, 0, 0.05 )" imgHeight={60} imgWidth={300}>
-
+        <FeatureBoard link="Learn more" text="The Adobe XD and Jira Software Cloud integration uses the XD Cloud Content APIs to let designers associate XD prototypes and design specs with Jira issues. This keeps projects organized while providing developers with everything they need to know in the environment they know." title="Bringing designers and developers together" color="white" img={jiraSVG} imgAlt="placeholder" img2={featureLogoPNG} imgAlt2="placeholder" tagFontSize={14} height="100%" backgroundColor="rgba( 0, 0, 0, 0.05 )" imgHeight={60} imgWidth={300}>
         </FeatureBoard>
       </Cards>
       <Cards paddingTop={30} marginLeft={25} width={760} wrapperPaddingBottom={20} height="auto" backgroundColor="#F4F4F4" justifyContent="flex-start">
@@ -126,11 +126,11 @@ export default function Home() {
       </Cards>
       <Cards paddingTop={10} marginLeft={40} wrapperPaddingBottom={20} height="auto" backgroundColor="#F4F4F4" justifyContent="flex-start">
         <div class="left">
-          <img src={marketplacePNG} style={styles.market}></img>
+          <img src={marketplacePNG} alt="placeholder" style={styles.market}></img>
         </div>
         <div class="right">
-          <Card level="h4" img={rightPNG} imgWidth={245} imgHeight={246}></Card>
-          <Description padding={0} marginTop={30} tagFontSize={15} width="100%" textFontSize={15} color="black" title="List your product" text="You can list your plugins and integrations with a description, screenshots, and more.">
+          <Card level="h4" img={rightPNG} imgAlt="placeholder" imgWidth={245} imgHeight={246}></Card>
+          <Description padding={0} marginTop={30} tagFontSize={15} width="100%" textFontSize={15} color="black" title="List your product" text="You can publish your plugins and integrations with a description, screenshots, and more.">
           </Description>
           <Description padding={0} marginTop={36} tagFontSize={15} width="100%" textFontSize={15} color="black" title="Link to your listing" text="You'll get a unique URL that opens the XD Plugin Manager right to your plugin listing.">
           </Description>
@@ -142,11 +142,11 @@ export default function Home() {
         <Description marginTop={50} tagFontSize={30} width="100%" color="black" title="Community & Support">
         </Description>
         <div style={styles.row}>
-          <Card level="h4" space={10} img={forumSVG} marginLeft={16} imgWidth={"100%"} imgHeight={"auto"} children="Join the XD Platform forums">
+          <Card level="h4" space={10} img={forumSVG} imgAlt="placeholder" marginLeft={16} imgWidth={"100%"} imgHeight={"auto"} children="Join the XD Platform forums">
           </Card>
-          <Card level="h4" space={10} img={newsletterSVG} marginLeft={20} imgWidth={"100%"} imgHeight={"auto"} children="Sign up for the CC Developer Newsletter">
+          <Card level="h4" space={10} img={newsletterSVG} imgAlt="placeholder" marginLeft={20} imgWidth={"100%"} imgHeight={"auto"} children="Sign up for the CC Developer Newsletter">
           </Card>
-          <Card level="h4" space={10} img={githubSVG} marginLeft={20} imgWidth={"100%"} imgHeight={"auto"} children="Visit Adobe XD on GitHub">
+          <Card level="h4" space={10} img={githubSVG} imgAlt="placeholder" marginLeft={20} imgWidth={"100%"} imgHeight={"auto"} children="Visit Adobe XD on GitHub">
           </Card>
         </div>
       </Cards>

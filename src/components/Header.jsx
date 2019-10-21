@@ -10,7 +10,12 @@ export default function Header({ items = [] } = {}) {
       flexDirection: "row",
       alignItems: "center",
       // marginLeft: "10%",
-      paddingLeft: "5%"
+      paddingLeft: "5%",
+      letterSpacing: ".2px",
+      position: "fixed",
+      backgroundColor: "white",
+      width: "100%",
+      zIndex: 1030
     },
     logo: {
       height: 48,
@@ -19,7 +24,9 @@ export default function Header({ items = [] } = {}) {
       position: "relative"
     },
     h1: {
-      fontSize: 24
+      fontSize: 24,
+      fontFamily: "roboto, medium",
+      lineHeight: "normal"
     },
     ul: {
       listStyle: "none",
@@ -28,12 +35,12 @@ export default function Header({ items = [] } = {}) {
     },
     li: {
       display: "inline-block",
-      marginRight: 24,
       fontSize: 14,
       fontFamily: "roboto, medium"
     },
     a: {
       color: "#323232",
+      marginRight: 27,
       textDecoration: "none",
       fontWeight: 500
     },

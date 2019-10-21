@@ -18,7 +18,8 @@ export default function Cards({
   flexDirection = "row",
   textAlign = "center",
   paddingTop,
-  minWidth = 800
+  minWidth = 800,
+  buffer
 } = {}) {
   const styles = {
     wrapper: {
@@ -28,8 +29,8 @@ export default function Cards({
       paddingBottom: wrapperPaddingBottom,
       paddingLeft,
       paddingRight,
-      paddingTop,
-      height
+      height,
+      paddingTop: buffer
     },
     h1: {
       fontWeight: 200,

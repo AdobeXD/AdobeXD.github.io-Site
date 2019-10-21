@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Description({ center = false, padding = 20, align = "left", marginTop, title, text, color = "white", highlight, rightTag, width = 739, tagFontSize = 50, textFontSize = 15 } = {}) {
+export default function Description({ arrowSVG, center = false, padding = 20, align = "left", marginTop, title, text, color = "white", highlight, rightTag, width = 739, tagFontSize = 50, textFontSize = 15, imgAlt = "" } = {}) {
     const styles = {
         wrapper: {
             textAlign: align,
@@ -35,12 +35,9 @@ export default function Description({ center = false, padding = 20, align = "lef
             textDecoration: "underline"
         },
         arrow: {
-            color,
             display: "inline-block",
             float: "right",
-            fontSize: 20,
-            marginTop: -2,
-            marginLeft: 0
+            marginTop: 5
         }
     };
     if (center) {
@@ -48,7 +45,7 @@ export default function Description({ center = false, padding = 20, align = "lef
             <div class="center">
                 {highlight && <p style={styles.highlight}>{highlight}</p>}
                 {title && <p style={styles.tag}>{title}</p>}
-                {rightTag && <p style={styles.arrow}>></p>}
+                {rightTag && <img style={styles.arrow} src={arrowSVG} alt={imgAlt}></img>}
                 {rightTag && <p style={styles.rightTag}>{rightTag}</p>}
                 {text && <p style={styles.text}>{text}</p>}
             </div>
@@ -58,7 +55,7 @@ export default function Description({ center = false, padding = 20, align = "lef
             <div style={styles.wrapper}>
                 {highlight && <p style={styles.highlight}>{highlight}</p>}
                 {title && <p style={styles.tag}>{title}</p>}
-                {rightTag && <p style={styles.arrow}>></p>}
+                {rightTag && <img style={styles.arrow} src={arrowSVG} alt={imgAlt}></img>}
                 {rightTag && <p style={styles.rightTag}>{rightTag}</p>}
                 {text && <p style={styles.text}>{text}</p>}
             </div>
