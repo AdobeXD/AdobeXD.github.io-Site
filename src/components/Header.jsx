@@ -11,7 +11,11 @@ export default function Header({ items = [] } = {}) {
       alignItems: "center",
       // marginLeft: "10%",
       paddingLeft: "5%",
-      letterSpacing: ".2px"
+      letterSpacing: ".2px",
+      position: "fixed",
+      backgroundColor: "white",
+      width: "100%",
+      zIndex: 1030
     },
     logo: {
       height: 48,

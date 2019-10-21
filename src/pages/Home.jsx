@@ -71,7 +71,7 @@ export default function Home() {
   return (
     <Fragment>
       <Header items={items} />
-      <Cards justifyContent="flex-start" height={440} wrapperPaddingBottom={0}>
+      <Cards justifyContent="flex-start" height={440} wrapperPaddingBottom={0} buffer={96}>
         <Description padding={0} width="50%" textFontSize={24} tagFontSize={45} title="Adobe XD Platform" text="Push the boundaries of design work">
         </Description>
         <Card level="h4" space={0} img={mainPNG} imgAlt="placeholder" marginLeft="15%" width="30%" imgWidth={463} imgHeight={310}>
