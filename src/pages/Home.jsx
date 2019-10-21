@@ -47,11 +47,21 @@ import TrelloLogo from "../assets/logos/mark-trello-blue-Blue.png";
 import SlopeLogo from "../assets/logos/slope-logo_full-color_dark.png";
 import InMotionNowLogo from "../assets/logos/F.inmotionnowlogo.png";
 
+const cloudLink = "http://localhost:8080/";
+const pluginLink = "http://localhost:8081/";
+const communityLink = "http://localhost:8082/";
+const homeLink = "http://localhost:3000/";
+const consoleLink = "https://console.adobe.io";
+const cloudConsoleLink = "https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?JDQ78F";
+const forumLink = "https://forums.adobexdplatform.com";
+const newsletterLink = "https://www.adobe.com/subscription/ccdevnewsletter.html"
+const githubLink = "https://github.com/AdobeXD";
+
 export default function Home() {
   const items = [
-    { label: "Plugin APIs", href: "//adobexdplatform.com/plugin-docs/" },
-    { label: "Cloud Contents APIs", href: "//adobexdplatform.com/cloud-api-docs/" },
-    { label: "Community & Support", href: "//adobexdplatform.com/community-and-support" }
+    { label: "Plugin APIs", href: pluginLink },
+    { label: "Cloud Contents APIs", href: cloudLink },
+    { label: "Community & Support", href: communityLink }
   ];
   const styles = {
     row: {
@@ -70,7 +80,7 @@ export default function Home() {
   }
   return (
     <Fragment>
-      <Header items={items} />
+      <Header items={items} home={homeLink} />
       <Cards justifyContent="flex-start" height={440} wrapperPaddingBottom={0} buffer={96}>
         <Description padding={0} width="50%" textFontSize={24} tagFontSize={45} title="Adobe XD Platform" text="Push the boundaries of design work">
         </Description>
@@ -82,9 +92,9 @@ export default function Home() {
         </Description>
       </Cards>
       <Cards wrapperPaddingBottom={20} marginLeft={"20%"} marginRight={"20%"} minWidth={500} paddingTop={0} backgroundColor="white" height="auto" justifyContent="center">
-        <Card level="h4" bodyWidth={400} space={20} img={pluginPNG} imgAlt="placeholder" imgWidth={243} imgHeight={162} width="40%" title="Plugin APIs" children="Bring your product and features to XD" link="Get started">
+        <Card level="h4" bodyWidth={400} space={20} img={pluginPNG} imgAlt="placeholder" imgWidth={243} imgHeight={162} width="40%" title="Plugin APIs" href={pluginLink} children="Bring your product and features to XD" link="Get started">
         </Card>
-        <Card level="h4" bodyWidth={400} space={20} img={cloudPNG} imgAlt="placeholder" imgWidth={243} imgHeight={162} width="40%" marginLeft={0} title="Cloud Contents APIs" children="Bring XD designs to your product" link="Get started">
+        <Card level="h4" bodyWidth={400} space={20} img={cloudPNG} imgAlt="placeholder" imgWidth={243} imgHeight={162} width="40%" marginLeft={0} title="Cloud Contents APIs" href={cloudLink} children="Bring XD designs to your product" link="Get started">
         </Card>
       </Cards>
       <Cards height="auto" justifyContent="flex-start" wrapperPaddingBottom={10}>
@@ -92,7 +102,7 @@ export default function Home() {
         </Description>
       </Cards>
       <Cards height={100} justifyContent="flex-start" wrapperPaddingBottom={15}>
-        <Description arrowSVG={chevronSVG} imgAlt="placeholder" width="100%" tagFontSize={15} color="white" rightTag="Create your own plugin" title="XD Plugins" text="Provide users with new functionality across these plugin categories" >
+        <Description arrowSVG={chevronSVG} imgAlt="placeholder" width="100%" tagFontSize={24} color="white" rightTag="Create your own plugin" href={consoleLink} title="XD Plugins" text="Provide users with new functionality across these plugin categories" >
         </Description>
       </Cards>
       <Cards height="auto" marginLeft={32} wrapperPaddingBottom={10}>
@@ -113,7 +123,7 @@ export default function Home() {
         </FeatureCard>
       </Cards>
       <Cards height={100} justifyContent="flex-start" wrapperPaddingBottom={10}>
-        <Description arrowSVG={chevronSVG} imgAlt="placeholder" width="100%" tagFontSize={15} color="white" rightTag="Start integrating today" title="XD Cloud Integrations" text="Enable the power of Creative Cloud">
+        <Description arrowSVG={chevronSVG} imgAlt="placeholder" width="100%" tagFontSize={24} color="white" rightTag="Start integrating today" href={cloudConsoleLink} title="XD Cloud Integrations" text="Enable the power of Creative Cloud">
         </Description>
       </Cards>
       <Cards height="auto" marginLeft={32} textAlign="left">
@@ -143,11 +153,11 @@ export default function Home() {
         <Description marginTop={50} tagFontSize={30} width="100%" color="black" title="Community & Support">
         </Description>
         <div style={styles.row}>
-          <Card level="h4" space={10} img={forumSVG} imgAlt="placeholder" marginLeft={16} imgWidth={"100%"} imgHeight={"auto"} children="Join the XD Platform forums">
+          <Card level="h4" space={10} href={forumLink} img={forumSVG} imgAlt="placeholder" marginLeft={16} imgWidth={"100%"} imgHeight={"auto"} children="Join the XD Platform forums">
           </Card>
-          <Card level="h4" space={10} img={newsletterSVG} imgAlt="placeholder" marginLeft={20} imgWidth={"100%"} imgHeight={"auto"} children="Sign up for the CC Developer Newsletter">
+          <Card level="h4" space={10} href={newsletterLink} img={newsletterSVG} imgAlt="placeholder" marginLeft={20} imgWidth={"100%"} imgHeight={"auto"} children="Sign up for the CC Developer Newsletter">
           </Card>
-          <Card level="h4" space={10} img={githubSVG} imgAlt="placeholder" marginLeft={20} imgWidth={"100%"} imgHeight={"auto"} children="Visit Adobe XD on GitHub">
+          <Card level="h4" space={10} href={githubLink} img={githubSVG} imgAlt="placeholder" marginLeft={20} imgWidth={"100%"} imgHeight={"auto"} children="Visit Adobe XD on GitHub">
           </Card>
         </div>
       </Cards>

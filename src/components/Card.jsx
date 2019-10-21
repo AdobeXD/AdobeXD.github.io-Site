@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Card({ space = 30, top = "auto", imgPosition = "static", bodyWidth = "100%", link, width, img, title, children, level = "h3", imgAlt = "", marginLeft = 0, imgWidth = 260, imgHeight = 260 } = {}) {
+export default function Card({ href, space = 30, top = "auto", imgPosition = "static", bodyWidth = "100%", link, width, img, title, children, level = "h3", imgAlt = "", marginLeft = 0, imgWidth = 260, imgHeight = 260 } = {}) {
   const styles = {
     wrapper: {
       // flexDirection: "column",
@@ -53,10 +53,10 @@ export default function Card({ space = 30, top = "auto", imgPosition = "static",
   };
   return (
     <div style={styles.wrapper}>
-      {img && <img style={styles.img} src={img} alt={imgAlt} />}
+      {img && <a href={href}><img style={styles.img} src={img} alt={imgAlt} /></a>}
       {title && <div style={styles[level]}>{title}</div>}
       {children && <div style={styles.body}>{children}</div>}
-      {link && <a style={styles.link}>{link}</a>}
+      {link && <a style={styles.link} href={href}>{link}</a>}
     </div>
   );
 }

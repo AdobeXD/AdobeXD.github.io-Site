@@ -2,7 +2,7 @@ import React from "react";
 
 import logo from "../assets/xd-logo.png";
 
-export default function Header({ items = [] } = {}) {
+export default function Header({ items = [] } = {}, home) {
   const styles = {
     heading: {
       height: 96,
@@ -76,7 +76,9 @@ export default function Header({ items = [] } = {}) {
 
   return (
     <header style={styles.heading}>
-      <img style={styles.logo} src={logo} alt="Adobe XD logo" />
+      <a href={home}>
+        <img style={styles.logo} src={logo} alt="Adobe XD logo" />
+      </a>
       <h1 style={styles.h1}>Adobe XD Platform</h1>
       <ul style={styles.ul}>
         {items.map((item, idx) => (

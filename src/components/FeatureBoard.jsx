@@ -44,8 +44,6 @@ export default function FeatureBoard({ link, text, backgroundColor, height, widt
             height: 300
         },
         img2: {
-            height: 262,
-            width: 466,
             marginLeft: "15%",
             verticalAlign: "middle"
         },
@@ -64,7 +62,8 @@ export default function FeatureBoard({ link, text, backgroundColor, height, widt
                 {link && <a style={styles.link}>{link}</a>}
             </div>
             <div style={styles.rightBox}>
-                {img2 && <img style={styles.img2} src={img2} alt={imgAlt2} />}
+                <iframe style={styles.img2} width="466" height="262" src="https://www.youtube.com/embed/bEIbaZ8DtcY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                {/* {img2 && <img style={styles.img2} src={img2} alt={imgAlt2} />} */}
             </div>
         </div>
     );

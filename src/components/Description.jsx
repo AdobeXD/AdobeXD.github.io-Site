@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Description({ arrowSVG, center = false, padding = 20, align = "left", marginTop, title, text, color = "white", highlight, rightTag, width = 739, tagFontSize = 50, textFontSize = 15, imgAlt = "" } = {}) {
+export default function Description({ href, arrowSVG, center = false, padding = 20, align = "left", marginTop, title, text, color = "white", highlight, rightTag, width = 739, tagFontSize = 50, textFontSize = 15, imgAlt = "" } = {}) {
     const styles = {
         wrapper: {
             textAlign: align,
@@ -46,7 +46,7 @@ export default function Description({ arrowSVG, center = false, padding = 20, al
                 {highlight && <p style={styles.highlight}>{highlight}</p>}
                 {title && <p style={styles.tag}>{title}</p>}
                 {rightTag && <img style={styles.arrow} src={arrowSVG} alt={imgAlt}></img>}
-                {rightTag && <p style={styles.rightTag}>{rightTag}</p>}
+                {rightTag && <a href={href}><p style={styles.rightTag}>{rightTag}</p></a>}
                 {text && <p style={styles.text}>{text}</p>}
             </div>
         );
@@ -56,7 +56,7 @@ export default function Description({ arrowSVG, center = false, padding = 20, al
                 {highlight && <p style={styles.highlight}>{highlight}</p>}
                 {title && <p style={styles.tag}>{title}</p>}
                 {rightTag && <img style={styles.arrow} src={arrowSVG} alt={imgAlt}></img>}
-                {rightTag && <p style={styles.rightTag}>{rightTag}</p>}
+                {rightTag && <a href={href}><p style={styles.rightTag}>{rightTag}</p></a>}
                 {text && <p style={styles.text}>{text}</p>}
             </div>
         );
