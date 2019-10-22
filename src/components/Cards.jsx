@@ -5,7 +5,7 @@ export default function Cards({
   footing,
   level = "h1",
   children,
-  backgroundColor = "#242F6F",
+  backgroundColor = "#323232",
   backgroundImage,
   justifyContent = "center",
   height = 648,

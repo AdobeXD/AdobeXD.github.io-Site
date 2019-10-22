@@ -95,10 +95,42 @@ a:hover .evidon-consent-link-text {
   }
 } */
 
-/* @media screen and (min-width: 1400px) { */
+@media screen and (min-width: 1630px){
   .left {
     display: block;
-    width: 800;
+    height: "100%";
+    padding-left: 36;
+  }
+  .right {
+    width: 23%;
+    margin-left: 5%;
+    margin-top: -5%;
+    position: relative;
+    height: 800px;
+  }
+  .center {
+    margin-top: 50;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+    flex: "0 1 auto";
+    padding: 20;
+  }
+  .market {
+    width: 830px;
+    height: 870px;
+    box-shadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
+    float: "left";
+  }
+  .right img {
+    height: 245px;
+    width: 245px;
+  }
+}
+
+@media screen and (min-width: 1360px) and (max-width: 1630px) {
+  .left {
+    display: block;
     height: "100%";
     padding-left: 36;
   }
@@ -117,4 +149,80 @@ a:hover .evidon-consent-link-text {
     flex: "0 1 auto";
     padding: 20;
   }
-/* } */
+  .market {
+    width: 730px;
+    height: 770px;
+    box-shadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
+    float: "left";
+  }
+  .right img {
+    height: 245px;
+    width: 245px;
+  }
+}
+
+@media screen and (min-width: 1180px) and (max-width: 1359px) {
+  .left {
+    display: block;
+    height: "100%";
+    padding-left: 36;
+  }
+  .right {
+    width: 25%;
+    margin-left: 5%;
+    margin-top: -5%;
+    position: relative;
+    height: 622px;
+  }
+  .center {
+    margin-top: 50;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+    flex: "0 1 auto";
+    padding: 20;
+  }
+  .market {
+    width: 630px;
+    height: 670px;
+    box-shadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
+    float: "left";
+  }
+  .right img {
+    height: 220px;
+    width: 220px;
+  }
+}
+
+@media screen and (min-width: 950px) and (max-width: 1179px) {
+  .left {
+    display: block;
+    height: "100%";
+    padding-left: 36;
+  }
+  .right {
+    width: 30%;
+    margin-left: 5%;
+    margin-top: -5%;
+    position: relative;
+    height: 521px;
+  }
+  .center {
+    margin-top: 50;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+    flex: "0 1 auto";
+    padding: 20;
+  }
+  .market {
+    width: 500px;
+    height: 550px;
+    box-shadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
+    float: "left";
+  }
+  .right img {
+    height: 180px;
+    width: 180px;
+  }
+}

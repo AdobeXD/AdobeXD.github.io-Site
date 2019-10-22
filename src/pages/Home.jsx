@@ -71,18 +71,12 @@ export default function Home() {
       marginBottom: 10,
       paddingLeft: 20,
       width: "100%"
-    },
-    market: {
-      width: 730,
-      height: 770,
-      boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
-      float: "left"
     }
   }
   return (
     <Fragment>
       <Header items={items} home={homeLink} />
-      <Cards justifyContent="flex-start" height={440} wrapperPaddingBottom={0} buffer={96}>
+      <Cards justifyContent="flex-start" height={440} wrapperPaddingBottom={0} buffer={96} backgroundColor="#71005C">
         <Description padding={0} width="50%" textFontSize={24} tagFontSize={45} title="Adobe XD Platform" text="Push the boundaries of design work even further">
         </Description>
         <Card level="h4" space={0} img={mainPNG} imgAlt="placeholder" marginLeft="15%" width="30%" imgWidth={463} imgHeight={310}>
@@ -107,19 +101,19 @@ export default function Home() {
         </Description>
       </Cards>
       <Cards height="auto" marginLeft={32} wrapperPaddingBottom={10}>
-        <FeatureCard body="Connect designers with their teams and stakeholders" img={collaborationPNG} imgAlt="placeholder" width="20%" height={247} backgroundColor="rgba( 0, 0, 0, 0.05 )" title="Collaboration" imgHeight={41} imgWidth={41}>
+        <FeatureCard body="Connect designers with their teams and stakeholders" img={collaborationPNG} imgAlt="placeholder" width="20%" height={247} backgroundColor="#505050" title="Collaboration" imgHeight={41} imgWidth={41}>
 
         </FeatureCard>
-        <FeatureCard body="Accelerate design work with new and unique features" img={toolsPNG} imgAlt="placeholder" width="20%" height={247} backgroundColor="rgba( 0, 0, 0, 0.05 )" title="Tools & Automation" imgHeight={41} imgWidth={41} marginLeft={20}>
+        <FeatureCard body="Accelerate design work with new and unique features" img={toolsPNG} imgAlt="placeholder" width="20%" height={247} backgroundColor="#505050" title="Tools & Automation" imgHeight={41} imgWidth={41} marginLeft={20}>
 
         </FeatureCard>
-        <FeatureCard body="Enable designers to share their work anywhere" img={publishSVG} imgAlt="placeholder" width="20%" height={247} backgroundColor="rgba( 0, 0, 0, 0.05 )" title="Publish & Handoff" imgHeight={41} imgWidth={41} marginLeft={20}>
+        <FeatureCard body="Enable designers to share their work anywhere" img={publishSVG} imgAlt="placeholder" width="20%" height={247} backgroundColor="#505050" title="Publish & Handoff" imgHeight={41} imgWidth={41} marginLeft={20}>
 
         </FeatureCard>
-        <FeatureCard body="Help designers ensure their work connects with users" img={usabilityPNG} imgAlt="placeholder" width="20%" height={247} backgroundColor="rgba( 0, 0, 0, 0.05 )" title="Usability & Testing" imgHeight={41} imgWidth={41} marginLeft={20}>
+        <FeatureCard body="Help designers ensure their work connects with users" img={usabilityPNG} imgAlt="placeholder" width="20%" height={247} backgroundColor="#505050" title="Usability & Testing" imgHeight={41} imgWidth={41} marginLeft={20}>
 
         </FeatureCard>
-        <FeatureCard body="Provide direct access to icons, images, data, and more" img={designSVG} imgAlt="placeholder" width="20%" height={247} backgroundColor="rgba( 0, 0, 0, 0.05 )" title="Design Assets" imgHeight={41} imgWidth={41} marginLeft={20}>
+        <FeatureCard body="Provide direct access to icons, images, data, and more" img={designSVG} imgAlt="placeholder" width="20%" height={247} backgroundColor="#505050" title="Design Assets" imgHeight={41} imgWidth={41} marginLeft={20}>
 
         </FeatureCard>
       </Cards>
@@ -128,7 +122,7 @@ export default function Home() {
         </Description>
       </Cards>
       <Cards height="auto" marginLeft={32} textAlign="left">
-        <FeatureBoard link="Learn more" linkUrl={blogUrl} text="The Adobe XD and Jira Software Cloud integration uses the XD Cloud Content APIs to let designers associate XD prototypes and design specs with Jira issues. This keeps projects organized while providing developers with everything they need to know in the environment they know." title="Bringing designers and developers together" color="white" img={jiraSVG} imgAlt="placeholder" img2={featureLogoPNG} imgAlt2="placeholder" tagFontSize={14} height="100%" backgroundColor="rgba( 0, 0, 0, 0.05 )" imgHeight={60} imgWidth={300}>
+        <FeatureBoard link="Learn more" linkUrl={blogUrl} text="The Adobe XD and Jira Software Cloud integration uses the XD Cloud Content APIs to let designers associate XD prototypes and design specs with Jira issues. This keeps projects organized while providing developers with everything they need to know in the environment they know." title="Bringing designers and developers together" color="white" img={jiraSVG} imgAlt="placeholder" img2={featureLogoPNG} imgAlt2="placeholder" tagFontSize={14} height="100%" backgroundColor="#505050" imgHeight={60} imgWidth={300}>
         </FeatureBoard>
       </Cards>
       <Cards paddingTop={30} marginLeft={25} width={760} wrapperPaddingBottom={20} height="auto" backgroundColor="#F4F4F4" justifyContent="flex-start">
@@ -137,10 +131,10 @@ export default function Home() {
       </Cards>
       <Cards paddingTop={10} marginLeft={40} wrapperPaddingBottom={20} height="auto" backgroundColor="#F4F4F4" justifyContent="flex-start">
         <div class="left">
-          <img src={marketplacePNG} alt="placeholder" style={styles.market}></img>
+          <img src={marketplacePNG} alt="placeholder" class="market"></img>
         </div>
         <div class="right">
-          <Card level="h4" img={rightPNG} imgAlt="placeholder" imgWidth={245} imgHeight={246}></Card>
+          <img src={rightPNG} alt="placeholder"></img>
           <Description padding={0} marginTop={30} tagFontSize={15} width="100%" textFontSize={15} color="black" title="List your product" text="You can publish your plugins and integrations with a description, screenshots, and more.">
           </Description>
           <Description padding={0} marginTop={36} tagFontSize={15} width="100%" textFontSize={15} color="black" title="Link to your listing" text="You'll get a unique URL that opens the XD Plugin Manager right to your plugin listing.">

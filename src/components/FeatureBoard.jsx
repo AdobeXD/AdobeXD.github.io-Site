@@ -11,7 +11,9 @@ export default function FeatureBoard({ link, linkUrl, text, backgroundColor, hei
             backgroundColor,
             height,
             padding: 40,
-            marginBottom: "20px"
+            marginBottom: "20px",
+            alignItems: "center",
+            justifyContent: "center"
         },
         img: {
             height: imgHeight,
@@ -40,12 +42,15 @@ export default function FeatureBoard({ link, linkUrl, text, backgroundColor, hei
             marginBottom: 40
         },
         rightBox: {
-            width: "50%",
+            verticalAlign: "middle",
+            width: "60%",
             height: 300
         },
-        img2: {
+        video: {
             marginLeft: "15%",
-            verticalAlign: "middle"
+            verticalAlign: "middle",
+            width: "80%",
+            height: "100%"
         },
         link: {
             display: "block",
@@ -62,7 +67,7 @@ export default function FeatureBoard({ link, linkUrl, text, backgroundColor, hei
                 {link && <a style={styles.link} href={linkUrl}>{link}</a>}
             </div>
             <div style={styles.rightBox}>
-                <iframe style={styles.img2} width="466" height="262" src="https://www.youtube.com/embed/bEIbaZ8DtcY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe style={styles.video} src="https://www.youtube.com/embed/bEIbaZ8DtcY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 {/* {img2 && <img style={styles.img2} src={img2} alt={imgAlt2} />} */}
             </div>
         </div>
