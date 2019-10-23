@@ -8,17 +8,17 @@ export default function Cards({
   backgroundColor = "#323232",
   backgroundImage,
   justifyContent = "center",
-  height = 648,
+  height,
   paddingLeft = "10%",
   paddingRight = "10%",
   marginLeft,
   marginRight,
   wrapperPaddingBottom = 35,
-  width = 1750,
+  width,
   flexDirection = "row",
   textAlign = "center",
   paddingTop,
-  minWidth = 800,
+  minWidth = 300,
   buffer
 } = {}) {
   const styles = {
@@ -57,14 +57,14 @@ export default function Cards({
       justifyContent,
       alignItems: "center",
       textAlign,
-      flexWrap: "wrap",
       minWidth,
       maxWidth: width,
       marginLeft,
       marginRight,
       padding: "12 24",
       paddingTop,
-      height: "100%"
+      height: "100%",
+      flaat: "left"
     }
   };
   return (

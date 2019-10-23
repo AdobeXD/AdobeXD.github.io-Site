@@ -1,23 +1,28 @@
 import React from "react";
 
-export default function Card({ href, space = 30, top = "auto", imgPosition = "static", bodyWidth = "100%", link, width, img, title, children, level = "h3", imgAlt = "", marginLeft = 0, imgWidth = 260, imgHeight = 260 } = {}) {
+export default function Card({ marginRight, bodyHeight, href, space = 30, top = "auto", imgPosition = "static", bodyWidth = "100%", link, width, img, title, children, level = "h3", imgAlt = "", marginLeft = 0, imgWidth = 260, imgHeight = 260 } = {}) {
   const styles = {
     wrapper: {
       // flexDirection: "column",
       display: "flex",
       justfiyContent: "center",
       flex: "2 1 auto",
-      marginLeft: marginLeft,
+      marginLeft,
+      marginRight,
       alignItems: "center",
       flexDirection: "column",
-      width
+      width,
+      position: "relative"
     },
     img: {
-      height: imgHeight,
-      width: imgWidth,
+      // height: imgHeight,
+      // width: imgWidth,
+      maxWidth: "100%",
+      height: "auto",
       marginBottom: space,
       position: imgPosition,
-      top
+      top,
+      verticalAlign: "top"
     },
     h3: {
       textAlign: "center",
@@ -40,7 +45,8 @@ export default function Card({ href, space = 30, top = "auto", imgPosition = "st
       fontWeight: "normal",
       fontSize: 15,
       marginTop: space,
-      width: bodyWidth
+      width: bodyWidth,
+      height: bodyHeight
     },
     link: {
       margin: 0,

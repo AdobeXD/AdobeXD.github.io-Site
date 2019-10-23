@@ -45,20 +45,12 @@ export default function FeatureCard({ body, backgroundColor, height, width, img,
             fontWeight: 200,
             position: "absolute",
             top: "20%"
-        },
-        box: {
-            display: "flex",
-            alignItems: "center",
-            // position: "relative",
-            top: "40%",
-            marginLeft: 30,
-            flex: "0 0 20%"
         }
     }
     return (
         <div style={styles.wrapper}>
             {title && <p style={styles.title}>{title}</p>}
-            {body && <p style={styles.body}>{body}</p>}
+            {body && <p class="featureBody" style={styles.body}>{body}</p>}
             {/* <div style={styles.box}> */}
             {img && <img style={styles.img} src={img} alt={imgAlt} />}
             {/* {name && <p style={styles.name}>{name}</p>} */}

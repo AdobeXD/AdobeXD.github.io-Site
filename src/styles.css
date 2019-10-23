@@ -7,7 +7,7 @@ body {
 
 .App {
   font-family: "Roboto", Helvetica Neue, Helvetica, Arial, sans-serif;
-  min-width: 1024px;
+  min-width: 1000px;
 }
 
 p {
@@ -100,13 +100,14 @@ a:hover .evidon-consent-link-text {
     display: block;
     height: "100%";
     padding-left: 36;
+    height: 900px;
   }
   .right {
     width: 23%;
     margin-left: 5%;
     margin-top: -5%;
     position: relative;
-    height: 800px;
+    height: 900px;
   }
   .center {
     margin-top: 50;
@@ -120,12 +121,47 @@ a:hover .evidon-consent-link-text {
     width: 830px;
     height: 870px;
     box-shadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
-    float: "left";
+    float: left;
   }
   .right img {
     height: 245px;
     width: 245px;
   }
+  .rightBottom{
+    position: absolute;
+    top: 40%;
+    font-size: 20px;
+  }
+
+  .rightBottom p{
+    font-size: 20px !important;
+  }
+
+  .topText {
+    position: absolute;
+    top: 4%;
+    text-align: left;
+    font-weight: 100;
+    font-size: 20px;
+  }
+
+  .topText a {
+    font-size: 20px;
+    margin-left: 5%;
+    color: blue;
+  }
+
+  
+  .featureBody {
+    display: block;
+    color: "white";
+    font-size: 15;
+    text-align: left;
+    margin-top: 50;
+    font-weight: 200;
+    position: absolute;
+    top: 20%;
+}
 }
 
 @media screen and (min-width: 1360px) and (max-width: 1630px) {
@@ -139,7 +175,7 @@ a:hover .evidon-consent-link-text {
     margin-left: 5%;
     margin-top: -5%;
     position: relative;
-    height: 710px;
+    height: 810px;
   }
   .center {
     margin-top: 50;
@@ -151,14 +187,48 @@ a:hover .evidon-consent-link-text {
   }
   .market {
     width: 730px;
-    height: 770px;
+    height: 810px;
     box-shadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
-    float: "left";
+    float: left;
   }
   .right img {
     height: 245px;
     width: 245px;
   }
+
+  .rightBottom{
+    position: absolute;
+    top: 35%;
+    font-size: 20px;
+  }
+
+  .rightBottom p{
+    font-size: 18px !important;
+  }
+
+  .topText {
+    position: absolute;
+    top: 4%;
+    text-align: left;
+    font-weight: 100;
+    font-size: 18px;
+  }
+
+  .topText a {
+    font-size: 18px;
+    margin-left: 5%;
+    color: blue;
+  }
+  .featureBody {
+    display: block;
+    color: "white";
+    font-size: 15;
+    text-align: left;
+    margin-top: 50;
+    font-weight: 200;
+    position: absolute;
+    top: 20%;
+}
 }
 
 @media screen and (min-width: 1180px) and (max-width: 1359px) {
@@ -172,7 +242,7 @@ a:hover .evidon-consent-link-text {
     margin-left: 5%;
     margin-top: -5%;
     position: relative;
-    height: 622px;
+    height: 750px;
   }
   .center {
     margin-top: 50;
@@ -184,14 +254,50 @@ a:hover .evidon-consent-link-text {
   }
   .market {
     width: 630px;
-    height: 670px;
+    height: 750px;
     box-shadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
-    float: "left";
+    float: left;
   }
   .right img {
     height: 220px;
     width: 220px;
   }
+  
+  .rightBottom{
+    position: absolute;
+    top: 30%;
+    font-size: 17px;
+  }
+
+  .rightBottom p{
+    font-size: 17px !important;
+  }
+
+  .topText {
+    position: absolute;
+    top: 4%;
+    text-align: left;
+    font-weight: 100;
+    font-size: 17px;
+  }
+
+  .topText a {
+    font-size: 17px;
+    margin-left: 5%;
+    color: blue;
+  }
+
+  
+  .featureBody {
+    display: block;
+    color: "white";
+    font-size: 15;
+    text-align: left;
+    margin-top: 50;
+    font-weight: 200;
+    position: absolute;
+    top: 20%;
+}
 }
 
 @media screen and (min-width: 950px) and (max-width: 1179px) {
@@ -199,13 +305,14 @@ a:hover .evidon-consent-link-text {
     display: block;
     height: "100%";
     padding-left: 36;
+    height: 620px;
   }
   .right {
-    width: 30%;
+    width: 35%;
     margin-left: 5%;
     margin-top: -5%;
     position: relative;
-    height: 521px;
+    height: 620px;
   }
   .center {
     margin-top: 50;
@@ -219,10 +326,43 @@ a:hover .evidon-consent-link-text {
     width: 500px;
     height: 550px;
     box-shadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
-    float: "left";
+    float: left;
   }
   .right img {
     height: 180px;
     width: 180px;
+  }
+
+  .rightBottom{
+    position: absolute;
+    top: 25%;
+    font-size: 14px;
+  }
+
+  .rightBottom p{
+    font-size: 14px !important;
+  }
+
+  .topText {
+    position: absolute;
+    top: 4%;
+    text-align: left;
+    font-weight: 100;
+    font-size: 14px;
+  }
+
+  .topText a {
+    font-size: 14px;
+    margin-left: 16px;
+    color: blue;
+  }
+/* 
+  .content {
+    display: none !important;
+  } */
+  .featureBody {
+      top: 15% !important;
+      margin-left: 10px !important;
+      margin-right: 10px !important;
   }
 }

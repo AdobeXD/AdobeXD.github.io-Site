@@ -41,7 +41,8 @@ export default function FeatureBoard({ link, linkUrl, text, backgroundColor, hei
             flexDirection: "column",
             textAign: "left",
             width: "40%",
-            marginBottom: 40
+            marginBottom: 40,
+            height: 300
         },
         rightBox: {
             verticalAlign: "middle",
