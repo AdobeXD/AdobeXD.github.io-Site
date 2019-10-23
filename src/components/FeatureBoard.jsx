@@ -13,7 +13,8 @@ export default function FeatureBoard({ link, linkUrl, text, backgroundColor, hei
             padding: 40,
             marginBottom: "20px",
             alignItems: "center",
-            justifyContent: "center"
+            justifyContent: "center",
+            borderRadius: 4
         },
         img: {
             height: imgHeight,
@@ -32,7 +33,8 @@ export default function FeatureBoard({ link, linkUrl, text, backgroundColor, hei
             display: "block",
             color: "white",
             fontSize: 15,
-            marginLeft: 0
+            marginLeft: 0,
+            fontWeight: 200
         },
         leftBox: {
             display: "flex",

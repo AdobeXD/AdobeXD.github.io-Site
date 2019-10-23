@@ -12,7 +12,8 @@ export default function FeatureCard({ body, backgroundColor, height, width, img,
             marginBottom: 30,
             padding: "auto",
             position: "relative",
-            padding: 15
+            padding: 15,
+            borderRadius: 4
         },
         img: {
             height: imgHeight,
@@ -41,7 +42,7 @@ export default function FeatureCard({ body, backgroundColor, height, width, img,
             fontSize: 15,
             textAlign: "left",
             marginTop: 50,
-            fontWeight: "normal",
+            fontWeight: 200,
             position: "absolute",
             top: "20%"
         },
