@@ -83,19 +83,10 @@ a:hover .evidon-consent-link-text {
     margin: auto;
     width: 50%;
   }
-  .center {
-    margin-top: 50;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-    flex: "0 1 auto";
-    padding: 20;
-    width: 50%;
-
-  }
+  
 } */
 
-@media screen and (min-width: 1630px){
+/* @media screen and (min-width: 1630px){
   .left {
     display: block;
     height: "100%";
@@ -254,7 +245,7 @@ a:hover .evidon-consent-link-text {
   }
   .market {
     width: 630px;
-    height: 750px;
+    height: 630px;
     box-shadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
     float: left;
   }
@@ -266,11 +257,11 @@ a:hover .evidon-consent-link-text {
   .rightBottom{
     position: absolute;
     top: 30%;
-    font-size: 17px;
+    font-size: 15px;
   }
 
   .rightBottom p{
-    font-size: 17px !important;
+    font-size: 15px !important;
   }
 
   .topText {
@@ -278,11 +269,11 @@ a:hover .evidon-consent-link-text {
     top: 4%;
     text-align: left;
     font-weight: 100;
-    font-size: 17px;
+    font-size: 15px;
   }
 
   .topText a {
-    font-size: 17px;
+    font-size: 15px;
     margin-left: 5%;
     color: blue;
   }
@@ -310,7 +301,7 @@ a:hover .evidon-consent-link-text {
   .right {
     width: 35%;
     margin-left: 5%;
-    margin-top: -5%;
+    margin-top: -6%;
     position: relative;
     height: 620px;
   }
@@ -323,8 +314,8 @@ a:hover .evidon-consent-link-text {
     padding: 20;
   }
   .market {
-    width: 500px;
-    height: 550px;
+    width: 520px;
+    height: 520px;
     box-shadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
     float: left;
   }
@@ -343,26 +334,55 @@ a:hover .evidon-consent-link-text {
     font-size: 14px !important;
   }
 
-  .topText {
-    position: absolute;
-    top: 4%;
-    text-align: left;
-    font-weight: 100;
-    font-size: 14px;
-  }
+  
 
-  .topText a {
-    font-size: 14px;
-    margin-left: 16px;
-    color: blue;
-  }
+   
 /* 
   .content {
     display: none !important;
   } */
-  .featureBody {
+  /* .featureBody {
       top: 15% !important;
       margin-left: 10px !important;
       margin-right: 10px !important;
   }
+} */
+
+.middle-section {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.topText {
+  text-align: left;
+  font-weight: 100;
+  font-size: 14px;
+}
+
+.topText a {
+  font-size: 14px;
+  margin-left: 16px;
+  color: blue;
+}
+
+.middle-section .left {
+  flex: 1 1 68%;
+}
+
+.middle-section .right {
+  flex: 0 0 32%;
+  margin-left: 5%;
+}
+
+.middle-section .left img {
+  width: 100%;
+}
+
+.center {
+  margin-top: 50;
+  text-align: left;
+  flex: "0 1 auto";
+  padding: 20;
+  width: 60%;
 }

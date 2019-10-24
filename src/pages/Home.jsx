@@ -25,7 +25,7 @@ import rightPNG from "../assets/right.png";
 import updatePluginPNG from "../assets/update-your-plugin@2x.png";
 import logoPNG from "../assets/logo.png";
 import featureLogoPNG from "../assets/feature-plugin@2x.png";
-import marketplacePNG from "../assets/Marketplace@3x.png";
+import marketplacePNG from "../assets/marketplace-desktop.png";
 import pluginPNG from "../assets/Essential-Plugins@2x.png";
 import cloudPNG from "../assets/Connect-Your-Tools@2x.png";
 import buildPNG from "../assets/xd_web_build.png";
@@ -87,9 +87,9 @@ export default function Home() {
         </Description>
       </Cards>
       <Cards wrapperPaddingBottom={20} marginLeft={"20%"} marginRight={"20%"} minWidth={300} paddingTop={0} backgroundColor="white" height="auto" justifyContent="center">
-        <Card level="h4" marginRight="5%" bodyWidth={300} space={20} img={pluginPNG} imgAlt="placeholder" imgWidth={243} imgHeight={162} width="40%" title="Plugin APIs" href={pluginLink} children="Bring new capabilities to XD" link="Create a plugin">
+        <Card level="h4" marginRight="6%" bodyWidth={400} space={20} img={pluginPNG} imgAlt="placeholder" imgWidth={155} imgHeight={104} width="40%" title="Plugin APIs" href={pluginLink} children="Bring new capabilities to XD" link="Create a plugin">
         </Card>
-        <Card level="h4" bodyWidth={300} space={20} img={cloudPNG} imgAlt="placeholder" imgWidth={243} imgHeight={162} width="40%" marginLeft={0} title="Cloud Content APIs" href={cloudLink} children="Connect XD designs to your product" link="Start integrating">
+        <Card level="h4" bodyWidth={400} space={20} img={cloudPNG} imgAlt="placeholder" imgWidth={155} imgHeight={104} width="40%" marginLeft={0} title="Cloud Content APIs" href={cloudLink} children="Connect XD designs to your product" link="Start integrating">
         </Card>
       </Cards>
       <Cards height="auto" justifyContent="flex-start" wrapperPaddingBottom={10}>
@@ -129,22 +129,25 @@ export default function Home() {
         <Description center={true} marginTop={50} width="100%" textFontSize={24} tagFontSize={30} color="black" title="Showcase it in XD" text="The XD Plugin Manager lets designers discover plugins and integrations right where they spend their time: in Adobe XD.">
         </Description>
       </Cards>
+
       <Cards paddingTop={10} marginLeft={40} wrapperPaddingBottom={40} height="auto" backgroundColor="#F4F4F4" justifyContent="flex-start">
-        <div class="left">
-          <img src={marketplacePNG} alt="placeholder" class="market"></img>
-        </div>
-        <div class="right">
-          <div class="topText">
-            <p>The XD Plugin Manager brings plugin and integration discovery right to where designers spend their time in Adobe XD.</p>
-            <a style={styles.a}>View</a>
+        <div class="middle-section">
+          <div class="left">
+            <img src={marketplacePNG} alt="placeholder" class="market"></img>
           </div>
-          <div class="rightBottom">
-            <Description padding={0} marginTop={30} tagFontSize={15} width="100%" textFontSize={15} color="black" title="List your product" text="You can list your plugins and integrations with a description, screenshots, icons, help URL, localization, and more.">
-            </Description>
-            <Description padding={0} marginTop={36} tagFontSize={15} width="100%" textFontSize={15} color="black" title="Link to your listing" text="The XD Plugin Manager supports deep links, meaning you can create a unique URL that opens the XD Plugin Manager right to your listing.">
-            </Description>
-            <Description padding={0} marginTop={36} tagFontSize={15} width="100%" textFontSize={15} color="black" title="Get discovered" text="Users know that the place to find XD plugins and integrations is the XD Plugin Manager, where they can browse, search, and manage their plugins.">
-            </Description>
+          <div class="right">
+            <div class="topText">
+              <p>The XD Plugin Manager brings plugin and integration discovery right to where designers spend their time in Adobe XD.</p>
+              <a style={styles.a}>View</a>
+            </div>
+            <div class="rightBottom">
+              <Description padding={0} marginTop={30} tagFontSize={15} width="100%" textFontSize={15} color="black" title="List your product" text="You can list your plugins and integrations with a description, screenshots, icons, help URL, localization, and more.">
+              </Description>
+              <Description padding={0} marginTop={36} tagFontSize={15} width="100%" textFontSize={15} color="black" title="Link to your listing" text="The XD Plugin Manager supports deep links, meaning you can create a unique URL that opens the XD Plugin Manager right to your listing.">
+              </Description>
+              <Description padding={0} marginTop={36} tagFontSize={15} width="100%" textFontSize={15} color="black" title="Get discovered" text="Users know that the place to find XD plugins and integrations is the XD Plugin Manager, where they can browse, search, and manage their plugins.">
+              </Description>
+            </div>
           </div>
         </div>
       </Cards>
@@ -152,12 +155,12 @@ export default function Home() {
         <Description marginTop={50} tagFontSize={30} width="100%" color="black" title="Community & Support">
         </Description>
       </Cards>
-      <Cards marginLeft={20} height="auto" wrapperPaddingBottom={10} backgroundColor="white" wrapperPaddingBottom={40}>
-        <Card level="h4" bodyHeight={30} space={10} href={forumLink} img={forumSVG} imgAlt="placeholder" marginLeft={16} imgWidth={"100%"} imgHeight={"auto"} children="Join the XD Platform forums">
+      <Cards marginLeft={20} height="auto" wrapperPaddingBottom={10} backgroundColor="white" wrapperPaddingBottom={40} justifyContent="space-between">
+        <Card level="h4" bodyHeight={30} space={10} href={forumLink} img={forumSVG} imgAlt="placeholder" marginLeft={16} children="Join the XD Platform forums">
         </Card>
-        <Card level="h4" bodyHeight={30} space={10} href={newsletterLink} img={newsletterSVG} imgAlt="placeholder" marginLeft={20} imgWidth={"100%"} imgHeight={"auto"} children="Sign up for the CC Developer Newsletter">
+        <Card level="h4" bodyHeight={30} space={10} href={newsletterLink} img={newsletterSVG} imgAlt="placeholder" marginLeft={20} children="Sign up for the CC Developer Newsletter">
         </Card>
-        <Card level="h4" bodyHeight={30} space={10} href={githubLink} img={githubSVG} imgAlt="placeholder" marginLeft={20} imgWidth={"100%"} imgHeight={"auto"} children="Visit Adobe XD on GitHub">
+        <Card level="h4" bodyHeight={30} space={10} href={githubLink} img={githubSVG} imgAlt="placeholder" marginLeft={20} children="Visit Adobe XD on GitHub">
         </Card>
       </Cards>
       <Footer />
