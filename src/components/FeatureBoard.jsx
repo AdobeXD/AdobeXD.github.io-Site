@@ -40,7 +40,7 @@ export default function FeatureBoard({ link, linkUrl, text, backgroundColor, hei
             display: "flex",
             flexDirection: "column",
             textAign: "left",
-            width: "40%",
+            width: "45%",
             marginBottom: 40,
             height: 300
         },

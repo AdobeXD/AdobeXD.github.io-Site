@@ -101,19 +101,19 @@ export default function Home() {
         </Description>
       </Cards>
       <Cards height="auto" marginLeft={32} wrapperPaddingBottom={10}>
-        <FeatureCard body="Connect designers with their teams and stakeholders" img={collaborationPNG} imgAlt="placeholder" width="20%" height={247} backgroundColor="#505050" title="Collaboration" imgHeight={41} imgWidth={41}>
+        <FeatureCard body="Connect designers with their teams and stakeholders" img={collaborationPNG} imgAlt="placeholder" width="20%" height={243} backgroundColor="#505050" title="Collaboration" imgHeight={41} imgWidth={41}>
 
         </FeatureCard>
-        <FeatureCard body="Accelerate design work with new and unique features" img={toolsPNG} imgAlt="placeholder" width="20%" height={247} backgroundColor="#505050" title="Tools & Automation" imgHeight={41} imgWidth={41} marginLeft={20}>
+        <FeatureCard body="Accelerate design work with new and unique features" img={toolsPNG} imgAlt="placeholder" width="20%" height={243} backgroundColor="#505050" title="Tools & Automation" imgHeight={41} imgWidth={41} marginLeft={20}>
 
         </FeatureCard>
-        <FeatureCard body="Enable designers to share their work anywhere" img={publishSVG} imgAlt="placeholder" width="20%" height={247} backgroundColor="#505050" title="Publish & Handoff" imgHeight={41} imgWidth={41} marginLeft={20}>
+        <FeatureCard body="Enable designers to share their work anywhere" img={publishSVG} imgAlt="placeholder" width="20%" height={243} backgroundColor="#505050" title="Publish & Handoff" imgHeight={41} imgWidth={41} marginLeft={20}>
 
         </FeatureCard>
-        <FeatureCard body="Help designers ensure their work connects with users" img={usabilityPNG} imgAlt="placeholder" width="20%" height={247} backgroundColor="#505050" title="Usability & Testing" imgHeight={41} imgWidth={41} marginLeft={20}>
+        <FeatureCard body="Help designers ensure their work connects with users" img={usabilityPNG} imgAlt="placeholder" width="20%" height={243} backgroundColor="#505050" title="Usability & Testing" imgHeight={41} imgWidth={41} marginLeft={20}>
 
         </FeatureCard>
-        <FeatureCard body="Provide direct access to icons, images, data, and more" img={designSVG} imgAlt="placeholder" width="20%" height={247} backgroundColor="#505050" title="Design Assets" imgHeight={41} imgWidth={41} marginLeft={20}>
+        <FeatureCard body="Provide direct access to icons, images, data, and more" img={designSVG} imgAlt="placeholder" width="20%" height={243} backgroundColor="#505050" title="Design Assets" imgHeight={41} imgWidth={41} marginLeft={20}>
 
         </FeatureCard>
       </Cards>

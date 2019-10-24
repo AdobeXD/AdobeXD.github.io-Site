@@ -10,17 +10,17 @@ export default function FeatureCard({ body, backgroundColor, height, width, img,
             backgroundColor,
             height,
             marginBottom: 30,
-            padding: "auto",
+            // padding: "auto",
             position: "relative",
-            padding: 15,
+            padding: "0.9%",
             borderRadius: 4
         },
         img: {
             height: imgHeight,
             width: imgWidth,
             position: "absolute",
-            top: "70%",
-            left: 32
+            top: "75%",
+            left: 25
         },
         name: {
             display: "inline-block",
@@ -41,10 +41,9 @@ export default function FeatureCard({ body, backgroundColor, height, width, img,
             color: "white",
             fontSize: 15,
             textAlign: "left",
-            marginTop: 50,
             fontWeight: 200,
             position: "absolute",
-            top: "20%"
+            top: "33%"
         }
     }
     return (
