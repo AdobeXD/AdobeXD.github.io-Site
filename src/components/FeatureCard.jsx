@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function FeatureCard({ body, backgroundColor, height, width, img, title, name, imgAlt = "", marginLeft = 0, imgWidth = 260, imgHeight = 260 } = {}) {
+export default function FeatureCard({ body, backgroundColor, height, width, img, img2, title, name, imgAlt = "", imgAlt2 ="", marginLeft = 0, imgWidth = 260, imgHeight = 260 } = {}) {
     const styles = {
         wrapper: {
             // flexDirection: "column",
@@ -12,7 +12,7 @@ export default function FeatureCard({ body, backgroundColor, height, width, img,
             marginBottom: 30,
             // padding: "auto",
             position: "relative",
-            padding: "0.9%",
+            padding: 10,
             borderRadius: 4
         },
         img: {
@@ -21,6 +21,13 @@ export default function FeatureCard({ body, backgroundColor, height, width, img,
             position: "absolute",
             top: "75%",
             left: 25
+        },
+        img2: {
+            height: imgHeight,
+            width: imgWidth,
+            position: "absolute",
+            top: "75%",
+            left: 92
         },
         name: {
             display: "inline-block",
@@ -47,11 +54,12 @@ export default function FeatureCard({ body, backgroundColor, height, width, img,
         }
     }
     return (
-        <div style={styles.wrapper}>
+        <div style={styles.wrapper} class="featureWrapper">
             {title && <p style={styles.title}>{title}</p>}
             {body && <p class="featureBody" style={styles.body}>{body}</p>}
             {/* <div style={styles.box}> */}
-            {img && <img style={styles.img} src={img} alt={imgAlt} />}
+            {img && <img class="featureImage" style={styles.img} src={img} alt={imgAlt} />}
+            {img2 && <img class="featureImage2" style={styles.img2} src={img2} alt={imgAlt2} />}
             {/* {name && <p style={styles.name}>{name}</p>} */}
             {/* </div> */}
         </div>

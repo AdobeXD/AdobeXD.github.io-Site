@@ -386,3 +386,19 @@ a:hover .evidon-consent-link-text {
   padding: 20;
   width: 60%;
 }
+
+@media screen and (max-width: 1079px) {
+  .featureBody{
+    display: none !important;
+  }
+  .featureWrapper{
+    height: 150px !important;
+  }
+  .featureImage{
+    top: 60% !important;
+  }
+  .featureImage2{
+    top: 60% !important;
+    left: 75px !important;
+  }
+} 

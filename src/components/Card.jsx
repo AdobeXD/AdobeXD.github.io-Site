@@ -15,8 +15,8 @@ export default function Card({ marginRight, bodyHeight, href, space = 30, top = 
       position: "relative"
     },
     img: {
-      height: imgHeight,
-      width: imgWidth,
+      // height: imgHeight,
+      // width: imgWidth,
       maxWidth: "100%",
       height: "auto",
       marginBottom: space,

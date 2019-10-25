@@ -20,14 +20,14 @@ import forumSVG from "../assets/forum.svg";
 import newsletterSVG from "../assets/newsletter.svg";
 import githubSVG from "../assets/github.svg";
 import jiraSVG from "../assets/jira.svg";
-import mainPNG from "../assets/main@2x.png";
+import mainPNG from "../assets/main@3x.png";
 import rightPNG from "../assets/right.png";
 import updatePluginPNG from "../assets/update-your-plugin@2x.png";
 import logoPNG from "../assets/logo.png";
 import featureLogoPNG from "../assets/feature-plugin@2x.png";
 import marketplacePNG from "../assets/marketplace-desktop.png";
-import pluginPNG from "../assets/Essential-Plugins@2x.png";
-import cloudPNG from "../assets/Connect-Your-Tools@2x.png";
+import pluginPNG from "../assets/Essential-Plugins@3x.png";
+import cloudPNG from "../assets/Connect-Your-Tools@3x.png";
 import buildPNG from "../assets/xd_web_build.png";
 import sharePNG from "../assets/xd_web_share.png";
 import devCommunitySVG from "../assets/S_Illu_DeveloperCommunity_180x120.svg";
@@ -76,10 +76,10 @@ export default function Home() {
   return (
     <Fragment>
       <Header items={items} home={homeLink} />
-      <Cards marginLeft={20} justifyContent="flex-start" height={440} wrapperPaddingBottom={0} buffer={96} backgroundColor="#71005C">
+      <Cards marginLeft={20} justifyContent="flex-start" height={440} wrapperPaddingBottom={0} buffer={96} backgroundColor="#721957">
         <Description padding={0} width="50%" textFontSize={24} tagFontSize={45} title="Adobe XD Platform" text="Push the boundaries of design work even further">
         </Description>
-        <Card level="h4" space={0} img={mainPNG} imgAlt="placeholder" marginLeft="15%" width="30%" imgWidth={463} imgHeight={310}>
+        <Card level="h4" space={0} img={mainPNG} imgAlt="placeholder" marginLeft="15%" width="30%" imgWidth={652} imgHeight={420}>
         </Card>
       </Cards>
       <Cards backgroundColor="white" height="auto" justifyContent="center" wrapperPaddingBottom={5}>
@@ -101,19 +101,19 @@ export default function Home() {
         </Description>
       </Cards>
       <Cards height="auto" marginLeft={32} wrapperPaddingBottom={10}>
-        <FeatureCard body="Connect designers with their teams and stakeholders" img={collaborationPNG} imgAlt="placeholder" width="20%" height={243} backgroundColor="#505050" title="Collaboration" imgHeight={41} imgWidth={41}>
+        <FeatureCard body="Connect designers with their teams and stakeholders" img={collaborationPNG} imgAlt="placeholder" img2={collaborationPNG} imgAlt2="placeholder" width="20%" height={243} backgroundColor="#505050" title="Collaboration" imgHeight={41} imgWidth={41}>
 
         </FeatureCard>
-        <FeatureCard body="Accelerate design work with new and unique features" img={toolsPNG} imgAlt="placeholder" width="20%" height={243} backgroundColor="#505050" title="Tools & Automation" imgHeight={41} imgWidth={41} marginLeft={20}>
+        <FeatureCard body="Accelerate design work with new and unique features" img={toolsPNG} imgAlt="placeholder" img2={collaborationPNG} imgAlt2="placeholder" width="20%" height={243} backgroundColor="#505050" title="Tools & Automation" imgHeight={41} imgWidth={41} marginLeft={20}>
 
         </FeatureCard>
-        <FeatureCard body="Enable designers to share their work anywhere" img={publishSVG} imgAlt="placeholder" width="20%" height={243} backgroundColor="#505050" title="Publish & Handoff" imgHeight={41} imgWidth={41} marginLeft={20}>
+        <FeatureCard body="Enable designers to share their work anywhere" img={publishSVG} imgAlt="placeholder" img2={collaborationPNG} imgAlt2="placeholder" width="20%" height={243} backgroundColor="#505050" title="Publish & Handoff" imgHeight={41} imgWidth={41} marginLeft={20}>
 
         </FeatureCard>
-        <FeatureCard body="Help designers ensure their work connects with users" img={usabilityPNG} imgAlt="placeholder" width="20%" height={243} backgroundColor="#505050" title="Usability & Testing" imgHeight={41} imgWidth={41} marginLeft={20}>
+        <FeatureCard body="Help designers ensure their work connects with users" img={usabilityPNG} imgAlt="placeholder" img2={collaborationPNG} imgAlt2="placeholder" width="20%" height={243} backgroundColor="#505050" title="Usability & Testing" imgHeight={41} imgWidth={41} marginLeft={20}>
 
         </FeatureCard>
-        <FeatureCard body="Provide direct access to icons, images, data, and more" img={designSVG} imgAlt="placeholder" width="20%" height={243} backgroundColor="#505050" title="Design Assets" imgHeight={41} imgWidth={41} marginLeft={20}>
+        <FeatureCard body="Provide direct access to icons, images, data, and more" img={designSVG} imgAlt="placeholder" img2={collaborationPNG} imgAlt2="placeholder" width="20%" height={243} backgroundColor="#505050" title="Design Assets" imgHeight={41} imgWidth={41} marginLeft={20}>
 
         </FeatureCard>
       </Cards>
