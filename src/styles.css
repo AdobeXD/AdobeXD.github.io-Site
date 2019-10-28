@@ -7,7 +7,7 @@ body {
 
 .App {
   font-family: "Roboto", Helvetica Neue, Helvetica, Arial, sans-serif;
-  min-width: 1000px;
+  min-width: 830px;
 }
 
 p {
@@ -351,17 +351,20 @@ a:hover .evidon-consent-link-text {
 .middle-section {
   display: flex;
   flex-direction: row;
-
 }
 
 .topText {
   text-align: left;
   font-weight: 100;
-  font-size: 14px;
+  font-size: 15px;
+}
+
+.normal {
+  font-weight: normal;
 }
 
 .topText a {
-  font-size: 14px;
+  font-size: 15px;
   margin-left: 16px;
   color: blue;
 }
@@ -379,12 +382,10 @@ a:hover .evidon-consent-link-text {
   width: 100%;
 }
 
-.center {
-  margin-top: 50;
-  text-align: left;
-  flex: "0 1 auto";
-  padding: 20;
-  width: 60%;
+.righttop{
+  max-width: 205px;
+  height: auto;
+  margin-bottom: 25px;
 }
 
 @media screen and (max-width: 1079px) {
@@ -400,5 +401,84 @@ a:hover .evidon-consent-link-text {
   .featureImage2{
     top: 60% !important;
     left: 75px !important;
+  }
+} 
+
+@media screen and (max-width: 1300px) {
+  .righttop{
+    display: none !important;
+  }
+  .middle-section .right p {
+    margin-bottom: 5px !important;
+  }
+  .ipad{
+    margin-left: 15% !important;
+    margin-right: 15% !important;
+  }
+} 
+
+@media screen and (max-width: 999px) {
+  .ipad{
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+  }
+  .featureImage{
+    top: 60% !important;
+    width: 29px !important;
+    height: 29px !important;
+    left: 15px !important;
+  }
+  .featureImage2{
+    top: 60% !important;
+    left: 55px !important;
+    width: 29px !important;
+    height: 29px !important;
+  }
+  .featureTitle{
+    font-size: 15px !important;
+  }
+  .featureWrapper {
+    height: 130px !important;
+  }
+
+  .featureWrapper p{
+    margin: 5px !important;
+  }
+  .stack {
+    flex-direction: column !important;
+    width: 100% !important;
+    margin-bottom: 0 !important;
+  }
+  .leftBox {
+    flex-direction: column !important;
+    width: 100% !important;
+    margin-bottom: 0 !important;
+    height: 250px !important;
+  }
+  .stack p {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+  }
+  .stack iframe {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+
+  .middle-section .left {
+    flex: 1 1 68%;
+  }
+
+  .middle-section .right {
+    flex: 0 0 32%;
+    margin-left: 1% !important;
+  }
+  .middle-section .right p {
+    margin-bottom: 5px !important;
+    margin-top: 0px !important;
+    margin-right: 0px !important;
+  }
+  .smallerPadding {
+    padding-left: 5% !important;
+    padding-right: 5% !important;
   }
 } 

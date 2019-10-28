@@ -45,7 +45,6 @@ export default function Card({ marginRight, bodyHeight, href, space = 30, top = 
       textAlign: "center",
       fontWeight: "normal",
       fontSize: 15,
-      marginTop: space,
       width: bodyWidth,
       height: bodyHeight
     },

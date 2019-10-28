@@ -4,7 +4,7 @@ export default function FeatureCard({ body, backgroundColor, height, width, img,
     const styles = {
         wrapper: {
             // flexDirection: "column",
-            flex: "1 1 0",
+            flex: "2 1 auto",
             marginLeft: marginLeft,
             width,
             backgroundColor,
@@ -55,7 +55,7 @@ export default function FeatureCard({ body, backgroundColor, height, width, img,
     }
     return (
         <div style={styles.wrapper} class="featureWrapper">
-            {title && <p style={styles.title}>{title}</p>}
+            {title && <p class="featureTitle" style={styles.title}>{title}</p>}
             {body && <p class="featureBody" style={styles.body}>{body}</p>}
             {/* <div style={styles.box}> */}
             {img && <img class="featureImage" style={styles.img} src={img} alt={imgAlt} />}

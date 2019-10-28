@@ -19,7 +19,8 @@ export default function Cards({
   textAlign = "center",
   paddingTop,
   minWidth = 300,
-  buffer
+  buffer,
+  twoApis=false
 } = {}) {
   const styles = {
     wrapper: {
@@ -67,11 +68,21 @@ export default function Cards({
       flaat: "left"
     }
   };
-  return (
-    <div style={styles.wrapper}>
-      {heading && <div style={styles[level]}>{heading}</div>}
-      <div style={styles.cards}>{children}</div>
-      {/* {footing} */}
-    </div>
-  );
+    if (twoApis){
+      return (
+        <div style={styles.wrapper} class="smallerPadding">
+          {heading && <div style={styles[level]}>{heading}</div>}
+          <div style={styles.cards} class="ipad">{children}</div>
+          {/* {footing} */}
+        </div>
+      )
+    }else {
+      return (
+        <div style={styles.wrapper} class="smallerPadding">
+          {heading && <div style={styles[level]}>{heading}</div>}
+          <div style={styles.cards}>{children}</div>
+          {/* {footing} */}
+        </div>
+      )  
+    }
 }
