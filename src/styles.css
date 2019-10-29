@@ -33,11 +33,6 @@ a:hover {
   justify-content: center;
 }
 
-.logos img {
-  height: 32px;
-  padding: 16px;
-}
-
 .footer {
   padding-bottom: 0;
   color: #B8B8B8;
@@ -353,10 +348,17 @@ a:hover .evidon-consent-link-text {
   flex-direction: row;
 }
 
+.align {
+
+}
 .topText {
   text-align: left;
   font-weight: 100;
   font-size: 15px;
+}
+
+.topText p {
+  margin-bottom: 8px !important;
 }
 
 .normal {
@@ -366,7 +368,9 @@ a:hover .evidon-consent-link-text {
 .topText a {
   font-size: 15px;
   margin-left: 16px;
-  color: blue;
+  color: #1473E6;
+  font-weight: normal;
+  margin-top: 2px;
 }
 
 .middle-section .left {
@@ -388,6 +392,13 @@ a:hover .evidon-consent-link-text {
   margin-bottom: 25px;
 }
 
+@media screen and (max-width: 1279px) {
+  .righttop{
+    display: none !important;
+  }
+} 
+
+
 @media screen and (max-width: 1079px) {
   .featureBody{
     display: none !important;
@@ -402,26 +413,13 @@ a:hover .evidon-consent-link-text {
     top: 60% !important;
     left: 75px !important;
   }
+  .banner {
+    width: 60% !important;
+  }
 } 
 
-@media screen and (max-width: 1300px) {
-  .righttop{
-    display: none !important;
-  }
-  .middle-section .right p {
-    margin-bottom: 5px !important;
-  }
-  .ipad{
-    margin-left: 15% !important;
-    margin-right: 15% !important;
-  }
-} 
 
 @media screen and (max-width: 999px) {
-  .ipad{
-    margin-left: 10% !important;
-    margin-right: 10% !important;
-  }
   .featureImage{
     top: 60% !important;
     width: 29px !important;
@@ -447,7 +445,6 @@ a:hover .evidon-consent-link-text {
   .stack {
     flex-direction: column !important;
     width: 100% !important;
-    margin-bottom: 0 !important;
   }
   .leftBox {
     flex-direction: column !important;
@@ -480,5 +477,8 @@ a:hover .evidon-consent-link-text {
   .smallerPadding {
     padding-left: 5% !important;
     padding-right: 5% !important;
+  }
+  .banner {
+    width: 70% !important;
   }
 } 

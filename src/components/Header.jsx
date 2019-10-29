@@ -18,32 +18,33 @@ export default function Header({ items = [] } = {}, home) {
       zIndex: 1030
     },
     logo: {
-      height: 44,
-      width: 45,
-      margin: "27px 24px 24px 2px",
+      height: 32,
+      width: 32,
+      margin: "32px 12px 24px 0px",
       position: "relative"
     },
     h1: {
-      fontSize: 24,
+      fontSize: 18,
       fontFamily: "roboto, medium",
-      lineHeight: "normal",
-      marginTop: 19
+      marginTop: 16,
+      marginBottom: 14
     },
     ul: {
       listStyle: "none",
-      marginLeft: 50,
+      marginLeft: "8%",
       marginTop: 15
     },
     li: {
       display: "inline-block",
-      fontSize: 14,
+      fontSize: 15,
       fontFamily: "roboto, medium"
     },
     a: {
       color: "#323232",
       marginRight: 27,
       textDecoration: "none",
-      fontWeight: 500
+      fontWeight: 400,
+      fontSize: 15
     },
     aButton: {
       marginLeft: "auto",

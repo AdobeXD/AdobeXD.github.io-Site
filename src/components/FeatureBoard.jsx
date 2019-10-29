@@ -11,7 +11,7 @@ export default function FeatureBoard({ link, linkUrl, text, backgroundColor, hei
             backgroundColor,
             height,
             padding: 40,
-            marginBottom: "20px",
+            marginBottom: 20,
             alignItems: "center",
             justifyContent: "center",
             borderRadius: 4
@@ -58,7 +58,8 @@ export default function FeatureBoard({ link, linkUrl, text, backgroundColor, hei
         link: {
             display: "block",
             color: "white",
-            fontSize: 15
+            fontSize: 15,
+            textDecoration: "underline"
         },
     }
     return (

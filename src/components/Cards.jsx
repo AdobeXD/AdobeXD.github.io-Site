@@ -64,19 +64,10 @@ export default function Cards({
       marginRight,
       padding: "12 24",
       paddingTop,
-      height: "100%",
-      flaat: "left"
+      height: "100%"
     }
   };
-    if (twoApis){
-      return (
-        <div style={styles.wrapper} class="smallerPadding">
-          {heading && <div style={styles[level]}>{heading}</div>}
-          <div style={styles.cards} class="ipad">{children}</div>
-          {/* {footing} */}
-        </div>
-      )
-    }else {
+    
       return (
         <div style={styles.wrapper} class="smallerPadding">
           {heading && <div style={styles[level]}>{heading}</div>}
@@ -84,5 +75,5 @@ export default function Cards({
           {/* {footing} */}
         </div>
       )  
-    }
+    
 }
