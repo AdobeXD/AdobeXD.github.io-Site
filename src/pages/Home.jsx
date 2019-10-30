@@ -10,6 +10,16 @@ import Button from "../components/Button.jsx";
 import Footer from "../components/Footer.jsx";
 
 import createPNG from "../assets/xd_web_create.png";
+import frontify from "../assets/frontify@3x.png";
+import jira from "../assets/jira.svg";
+import arranger from "../assets/arranger.svg";
+import renameit from "../assets/renameit@3x.png";
+import quest from "../assets/quest.svg";
+import stark from "../assets/stark@3x.png";
+import usertesting from "../assets/usertesting@3x.png";
+import uifaces from "../assets/uifaces.svg";
+import icondrop from "../assets/icondrop.svg";
+import overflow from "../assets/overflow.svg";
 import righttopPNG from "../assets/right-top@3x.png";
 import collaborationPNG from "../assets/collaboration.png";
 import designSVG from "../assets/design.svg";
@@ -20,7 +30,7 @@ import chevronSVG from "../assets/chevron.svg";
 import forumSVG from "../assets/forum.svg";
 import newsletterSVG from "../assets/newsletter.svg";
 import githubSVG from "../assets/github.svg";
-import jiraSVG from "../assets/jira.svg";
+import jiraSVG from "../assets/jirawide.svg";
 import mainPNG from "../assets/main@3x.png";
 import mainSVG from "../assets/main.svg";
 import rightPNG from "../assets/right.png";
@@ -91,7 +101,7 @@ export default function Home() {
         </Description>
       </Cards>
       <Cards twoApis={true} wrapperPaddingBottom={40} minWidth={300} paddingTop={0} backgroundColor="white" height="auto" justifyContent="center">
-        <Card outerAlignItems="flex-end" level="h4"  space={20} img={pluginSVG} imgAlt="placeholder" title="Plugin APIs" href={pluginLink} children="Bring your product and features to XD" link="Create a plugin">
+        <Card outerAlignItems="flex-end" level="h4" space={20} img={pluginSVG} imgAlt="placeholder" title="Plugin APIs" href={pluginLink} children="Bring your product and features to XD" link="Create a plugin">
         </Card>
         <Card outerAlignItems="flex-start" level="h4" spaceTop={18} space={18} img={cloudSVG} imgAlt="placeholder" marginLeft={0} title="Cloud Content APIs" href={cloudLink} children="Connect XD designs to your product" link="Start integrating">
         </Card>
@@ -105,19 +115,19 @@ export default function Home() {
         </Description>
       </Cards>
       <Cards height="auto" marginLeft={32} wrapperPaddingBottom={10}>
-        <FeatureCard body="Connect designers with their teams and stakeholders" img={collaborationPNG} imgAlt="placeholder" img2={collaborationPNG} imgAlt2="placeholder" width="20%" height={243} backgroundColor="#505050" title="Collaboration" imgHeight={41} imgWidth={41}>
+        <FeatureCard body="Connect designers with their teams and stakeholders" img={frontify} href="https://adobe.com/go/xd_plugins_discover_plugin?pluginId=30cb8db1" href2="https://adobe.com/go/xd_plugins_discover_plugin?pluginId=28192327" imgAlt="placeholder" img2={jira} imgAlt2="placeholder" width="20%" height={243} backgroundColor="#505050" title="Collaboration" imgHeight={41} imgWidth={41}>
 
         </FeatureCard>
-        <FeatureCard body="Accelerate design work with new and unique features" img={toolsPNG} imgAlt="placeholder" img2={collaborationPNG} imgAlt2="placeholder" width="20%" height={243} backgroundColor="#505050" title="Tools & Automation" imgHeight={41} imgWidth={41} marginLeft={20}>
+        <FeatureCard body="Accelerate design work with new and unique features" img={arranger} imgAlt="placeholder" href="https://adobe.com/go/xd_plugins_discover_plugin?pluginId=f0aac907" href2="https://adobe.com/go/xd_plugins_discover_plugin?pluginId=bcd7a3a9" img2={renameit} imgAlt2="placeholder" width="20%" height={243} backgroundColor="#505050" title="Tools & Automation" imgHeight={41} imgWidth={41} marginLeft={20}>
 
         </FeatureCard>
-        <FeatureCard body="Enable designers to share their work anywhere" img={publishSVG} imgAlt="placeholder" img2={collaborationPNG} imgAlt2="placeholder" width="20%" height={243} backgroundColor="#505050" title="Publish & Handoff" imgHeight={41} imgWidth={41} marginLeft={20}>
+        <FeatureCard body="Enable designers to share their work anywhere" img={quest} href="https://adobe.com/go/xd_plugins_discover_plugin?pluginId=2c680b2b" href2="https://adobe.com/go/xd_plugins_discover_plugin?pluginId=232cee78" imgAlt="placeholder" img2={overflow} imgAlt2="placeholder" width="20%" height={243} backgroundColor="#505050" title="Publish & Handoff" imgHeight={41} imgWidth={41} marginLeft={20}>
 
         </FeatureCard>
-        <FeatureCard body="Help designers ensure their work connects with users" img={usabilityPNG} imgAlt="placeholder" img2={collaborationPNG} imgAlt2="placeholder" width="20%" height={243} backgroundColor="#505050" title="Usability & Testing" imgHeight={41} imgWidth={41} marginLeft={20}>
+        <FeatureCard body="Help designers ensure their work connects with users" img={stark} href="https://adobe.com/go/xd_plugins_discover_plugin?pluginId=6cbf275e" href2="https://adobe.com/go/xd_plugins_discover_plugin?pluginId=713b61ec" imgAlt="placeholder" img2={usertesting} imgAlt2="placeholder" width="20%" height={243} backgroundColor="#505050" title="Usability & Testing" imgHeight={41} imgWidth={41} marginLeft={20}>
 
         </FeatureCard>
-        <FeatureCard body="Provide direct access to icons, images, data, and more" img={designSVG} imgAlt="placeholder" img2={collaborationPNG} imgAlt2="placeholder" width="20%" height={243} backgroundColor="#505050" title="Design Assets" imgHeight={41} imgWidth={41} marginLeft={20}>
+        <FeatureCard body="Provide direct access to icons, images, data, and more" img={uifaces} href="https://adobe.com/go/xd_plugins_discover_plugin?pluginId=aa845143" href2="https://adobe.com/go/xd_plugins_discover_plugin?pluginId=570d8b62" imgAlt="placeholder" img2={icondrop} imgAlt2="placeholder" width="20%" height={243} backgroundColor="#505050" title="Design Assets" imgHeight={41} imgWidth={41} marginLeft={20}>
 
         </FeatureCard>
       </Cards>

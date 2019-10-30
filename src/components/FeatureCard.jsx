@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function FeatureCard({ body, backgroundColor, height, width, img, img2, title, name, imgAlt = "", imgAlt2 ="", marginLeft = 0, imgWidth = 260, imgHeight = 260 } = {}) {
+export default function FeatureCard({ href, href2, body, backgroundColor, height, width, img, img2, title, name, imgAlt = "", imgAlt2 = "", marginLeft = 0, imgWidth = 260, imgHeight = 260 } = {}) {
     const styles = {
         wrapper: {
             // flexDirection: "column",
@@ -58,8 +58,8 @@ export default function FeatureCard({ body, backgroundColor, height, width, img,
             {title && <p class="featureTitle" style={styles.title}>{title}</p>}
             {body && <p class="featureBody" style={styles.body}>{body}</p>}
             {/* <div style={styles.box}> */}
-            {img && <img class="featureImage" style={styles.img} src={img} alt={imgAlt} />}
-            {img2 && <img class="featureImage2" style={styles.img2} src={img2} alt={imgAlt2} />}
+            {img && <a href={href}><img class="featureImage" style={styles.img} src={img} alt={imgAlt} /></a>}
+            {img2 && <a href={href2}><img class="featureImage2" style={styles.img2} src={img2} alt={imgAlt2} /></a>}
             {/* {name && <p style={styles.name}>{name}</p>} */}
             {/* </div> */}
         </div>
