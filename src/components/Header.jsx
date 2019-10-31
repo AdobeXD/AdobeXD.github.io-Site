@@ -31,7 +31,6 @@ export default function Header({ items = [] } = {}, home) {
     },
     ul: {
       listStyle: "none",
-      marginLeft: "8%",
       marginTop: 15
     },
     li: {
