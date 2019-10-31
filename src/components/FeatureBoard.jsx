@@ -23,8 +23,8 @@ export default function FeatureBoard({ link, linkUrl, text, backgroundColor, hei
         title: {
             display: "block",
             color: "white",
-            fontSize: 14,
-            fontWeight: "bold",
+            fontSize: 15,
+            fontWeight: 400,
             marginTop: 40,
             textAign: "left",
             marginLeft: 0

@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Description({ paddingBottom=20, tagBottomMargin=16, textWeight=200, banner=false, href, arrowSVG, center = false, padding = 20, align = "left", marginTop, title, text, color = "white", highlight, rightTag, width = 739, tagFontSize = 50, textFontSize = 15, imgAlt = "" } = {}) {
+export default function Description({ bodyMarginBottom = 16, paddingBottom = 20, tagBottomMargin = 16, textWeight = 200, banner = false, href, arrowSVG, center = false, padding = 20, align = "left", marginTop, title, text, color = "white", highlight, rightTag, width = 739, tagFontSize = 50, textFontSize = 15, imgAlt = "" } = {}) {
     const styles = {
         wrapper: {
             textAlign: align,
@@ -23,7 +23,8 @@ export default function Description({ paddingBottom=20, tagBottomMargin=16, text
             display: "block",
             fontSize: textFontSize,
             fontWeight: textWeight,
-            textAlign: align
+            textAlign: align,
+            marginBottom: bodyMarginBottom
         },
         highlight: {
             color: "#1D7DEE",
@@ -37,7 +38,8 @@ export default function Description({ paddingBottom=20, tagBottomMargin=16, text
             fontSize: textFontSize,
             textDecoration: "underline",
             marginTop: 6,
-            marginBottom: 6
+            marginBottom: 6,
+            marginRight: 12
         },
         arrow: {
             display: "inline-block",
@@ -55,7 +57,7 @@ export default function Description({ paddingBottom=20, tagBottomMargin=16, text
                 {text && <p style={styles.text}>{text}</p>}
             </div>
         );
-    } else if (banner){
+    } else if (banner) {
         return (
             <div class="banner" style={styles.wrapper}>
                 {highlight && <p style={styles.highlight}>{highlight}</p>}

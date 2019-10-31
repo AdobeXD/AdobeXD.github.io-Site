@@ -91,7 +91,7 @@ export default function Home() {
     <Fragment>
       <Header items={items} home={homeLink} />
       <Cards marginLeft={20} justifyContent="flex-start" height={440} wrapperPaddingBottom={0} buffer={96} backgroundColor="#721957">
-        <Description banner={true} padding={0} width="50%" textFontSize={24} tagFontSize={45} title="Adobe XD Platform" text="Push the boundaries of design work">
+        <Description banner={true} bodyMarginBottom={0} padding={0} width="50%" textFontSize={24} tagFontSize={45} title="Adobe XD Platform" text="Push the boundaries of design work">
         </Description>
         <Card level="h4" space={0} img={mainSVG} imgAlt="placeholder" marginLeft="5%" width="45%">
         </Card>
@@ -101,13 +101,13 @@ export default function Home() {
         </Description>
       </Cards>
       <Cards twoApis={true} wrapperPaddingBottom={40} minWidth={300} paddingTop={0} backgroundColor="white" height="auto" justifyContent="center">
-        <Card outerAlignItems="flex-end" level="h4" space={20} img={pluginSVG} imgAlt="placeholder" title="Plugin APIs" href={pluginLink} children="Bring your product and features to XD" link="Create a plugin">
+        <Card bodyWeight={200} outerAlignItems="flex-end" level="h4" space={20} img={pluginSVG} imgAlt="placeholder" title="Plugin APIs" href={pluginLink} children="Bring your product and features to XD" link="Create a plugin">
         </Card>
-        <Card outerAlignItems="flex-start" level="h4" spaceTop={18} space={18} img={cloudSVG} imgAlt="placeholder" marginLeft={0} title="Cloud Content APIs" href={cloudLink} children="Connect XD designs to your product" link="Start integrating">
+        <Card bodyWeight={200} outerAlignItems="flex-start" level="h4" spaceTop={18} space={18} img={cloudSVG} imgAlt="placeholder" marginLeft={0} title="Cloud Content APIs" href={cloudLink} children="Connect XD designs to your product" link="Start integrating">
         </Card>
       </Cards>
       <Cards height="auto" justifyContent="flex-start" wrapperPaddingBottom={0}>
-        <Description paddingBottom={15} marginTop={40} tagFontSize={30} color="white" title="See what developers are building" >
+        <Description paddingBottom={0} marginTop={30} tagFontSize={30} color="white" title="See what developers are building" >
         </Description>
       </Cards>
       <Cards height={100} justifyContent="flex-start" wrapperPaddingBottom={15}>
@@ -140,7 +140,7 @@ export default function Home() {
         </FeatureBoard>
       </Cards>
       <Cards paddingTop={60} marginLeft={20} wrapperPaddingBottom={16} height="auto" backgroundColor="#F4F4F4" justifyContent="flex-start">
-        <Description center={true} marginTop={50} width="100%" textFontSize={24} tagFontSize={30} color="black" title="Showcase it in XD" >
+        <Description center={true} marginTop={40} width="100%" textFontSize={24} tagFontSize={30} color="black" title="Showcase it in XD" >
         </Description>
       </Cards>
 
@@ -166,7 +166,7 @@ export default function Home() {
         </div>
       </Cards>
       <Cards height="auto" backgroundColor="white" justifyContent="flex-start" wrapperPaddingBottom={0}>
-        <Description marginTop={40} tagFontSize={30} width="100%" color="black" title="Community & Support">
+        <Description marginTop={30} paddingBottom={16} tagFontSize={30} width="100%" color="black" title="Community & Support">
         </Description>
       </Cards>
       <Cards marginLeft={20} height="auto" backgroundColor="white" wrapperPaddingBottom={60} justifyContent="space-between">
