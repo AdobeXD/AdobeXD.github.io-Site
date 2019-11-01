@@ -101,7 +101,7 @@ export default function Home() {
         </Description>
       </Cards>
       <Cards twoApis={true} wrapperPaddingBottom={40} minWidth={300} paddingTop={0} backgroundColor="white" height="auto" justifyContent="center">
-        <Card bodyWeight={200} outerAlignItems="flex-end" level="h4" space={20} img={pluginSVG} imgAlt="placeholder" title="Plugin APIs" href={pluginLink} children="Bring your product and features to XD" link="Create a plugin">
+        <Card bodyWeight={200} outerAlignItems="flex-end" level="h4" space={20} img={pluginSVG} imgAlt="placeholder" title="Plugin APIs" href={pluginLink} children="Bring your ideas and features to XD" link="Create a plugin">
         </Card>
         <Card bodyWeight={200} outerAlignItems="flex-start" level="h4" spaceTop={18} space={18} img={cloudSVG} imgAlt="placeholder" marginLeft={0} title="Cloud Content APIs" href={cloudLink} children="Connect XD designs to your product" link="Start integrating">
         </Card>
@@ -111,7 +111,7 @@ export default function Home() {
         </Description>
       </Cards>
       <Cards height={100} justifyContent="flex-start" wrapperPaddingBottom={15}>
-        <Description paddingBottom={10} arrowSVG={chevronSVG} imgAlt="placeholder" width="100%" tagFontSize={24} color="white" rightTag="Create your own plugin" href={consoleLink} title="XD Plugins" text="Developers extend XD's core functionality with these types of plugins and more, all powered by the XD Plugin APIs." >
+        <Description paddingBottom={10} arrowSVG={chevronSVG} imgAlt="placeholder" width="100%" tagFontSize={24} color="white" rightTag="Create your own plugin" href={pluginLink} title="XD Plugins" text="Developers extend XD's core functionality with these types of plugins and more, all powered by the XD Plugin APIs." >
         </Description>
       </Cards>
       <Cards height="auto" marginLeft={32} wrapperPaddingBottom={10}>
@@ -132,7 +132,7 @@ export default function Home() {
         </FeatureCard>
       </Cards>
       <Cards height={100} justifyContent="flex-start" wrapperPaddingBottom={15}>
-        <Description paddingBottom={15} arrowSVG={chevronSVG} imgAlt="placeholder" width="100%" tagFontSize={24} color="white" rightTag="Start integrating today" href={cloudConsoleLink} title="XD Cloud Content Integrations" text="With the XD Cloud Content APIs, you can bring design work created in XD directly to your product or service.">
+        <Description paddingBottom={15} arrowSVG={chevronSVG} imgAlt="placeholder" width="100%" tagFontSize={24} color="white" rightTag="Start integrating today" href={cloudLink} title="XD Cloud Content Integrations" text="With the XD Cloud Content APIs, you can bring design work created in XD directly to your product or service.">
         </Description>
       </Cards>
       <Cards height="auto" marginLeft={32} textAlign="left" wrapperPaddingBottom={40}>
@@ -157,7 +157,7 @@ export default function Home() {
               <a style={styles.a} href="https://adobexd.app.link/IxAIxfGzjZ">Open in XD</a>
               <Description padding={0} paddingBottom={0} marginTop={24} tagFontSize={15} width="100%" textFontSize={15} color="black" title="List your product" text="You can publish your plugins and integrations with a description, screenshots, and more.">
               </Description>
-              <Description padding={0} paddingBottom={0} marginTop={24} tagFontSize={15} width="100%" textFontSize={15} color="black" title="Link to your listing" text="Users can visit the XD Plugin Manager to browse and search for plugins you publish.">
+              <Description padding={0} paddingBottom={0} marginTop={24} tagFontSize={15} width="100%" textFontSize={15} color="black" title="Link to your listing" text="You'll get a unique URL that opens the XD Plugin Manager right to your plugin listing.">
               </Description>
               <Description padding={0} paddingBottom={0} marginTop={24} tagFontSize={15} width="100%" textFontSize={15} color="black" title="Get discovered" text="Users can visit the XD Plugin Manager to browse and search for plugins you publish.">
               </Description>
