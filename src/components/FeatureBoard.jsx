@@ -65,7 +65,7 @@ export default function FeatureBoard({ link, linkUrl, text, backgroundColor, hei
     return (
         <div style={styles.wrapper} class="stack">
             <div style={styles.leftBox} class="leftBox">
-                {img && <img style={styles.img} src={img} alt={imgAlt} />}
+                {img && <img style={styles.img} src={img} title={imgAlt} />}
                 {title && <p style={styles.title}>{title}</p>}
                 {text && <p style={styles.text}>{text}</p>}
                 {link && <a style={styles.link} href={linkUrl}>{link}</a>}

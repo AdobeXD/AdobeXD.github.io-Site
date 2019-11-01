@@ -58,8 +58,8 @@ export default function FeatureCard({ href, href2, body, backgroundColor, height
             {title && <p class="featureTitle" style={styles.title}>{title}</p>}
             {body && <p class="featureBody" style={styles.body}>{body}</p>}
             {/* <div style={styles.box}> */}
-            {img && <a href={href}><img class="featureImage" style={styles.img} src={img} alt={imgAlt} /></a>}
-            {img2 && <a href={href2}><img class="featureImage2" style={styles.img2} src={img2} alt={imgAlt2} /></a>}
+            {img && <a href={href}><img class="featureImage" style={styles.img} src={img} title={imgAlt} /></a>}
+            {img2 && <a href={href2}><img class="featureImage2" style={styles.img2} src={img2} title={imgAlt2} /></a>}
             {/* {name && <p style={styles.name}>{name}</p>} */}
             {/* </div> */}
         </div>

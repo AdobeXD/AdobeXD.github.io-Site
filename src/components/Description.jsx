@@ -52,7 +52,7 @@ export default function Description({ bodyMarginBottom = 16, paddingBottom = 20,
             <div class="center" >
                 {highlight && <p style={styles.highlight}>{highlight}</p>}
                 {title && <p style={styles.tag}>{title}</p>}
-                {rightTag && <img style={styles.arrow} src={arrowSVG} alt={imgAlt}></img>}
+                {rightTag && <img style={styles.arrow} src={arrowSVG} title={imgAlt}></img>}
                 {rightTag && <a href={href}><p style={styles.rightTag}>{rightTag}</p></a>}
                 {text && <p style={styles.text}>{text}</p>}
             </div>
@@ -62,7 +62,7 @@ export default function Description({ bodyMarginBottom = 16, paddingBottom = 20,
             <div class="banner" style={styles.wrapper}>
                 {highlight && <p style={styles.highlight}>{highlight}</p>}
                 {title && <p style={styles.tag}>{title}</p>}
-                {rightTag && <img style={styles.arrow} src={arrowSVG} alt={imgAlt}></img>}
+                {rightTag && <img style={styles.arrow} src={arrowSVG} title={imgAlt}></img>}
                 {rightTag && <a href={href}><p style={styles.rightTag}>{rightTag}</p></a>}
                 {text && <p style={styles.text}>{text}</p>}
             </div>
@@ -72,7 +72,7 @@ export default function Description({ bodyMarginBottom = 16, paddingBottom = 20,
             <div style={styles.wrapper}>
                 {highlight && <p style={styles.highlight}>{highlight}</p>}
                 {title && <p style={styles.tag}>{title}</p>}
-                {rightTag && <img style={styles.arrow} src={arrowSVG} alt={imgAlt}></img>}
+                {rightTag && <img style={styles.arrow} src={arrowSVG} title={imgAlt}></img>}
                 {rightTag && <a href={href}><p style={styles.rightTag}>{rightTag}</p></a>}
                 {text && <p style={styles.text}>{text}</p>}
             </div>

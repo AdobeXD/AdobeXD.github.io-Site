@@ -91,7 +91,7 @@ export default function Home() {
     <Fragment>
       <Header items={items} home={homeLink} />
       <Cards marginLeft={20} justifyContent="flex-start" height={440} wrapperPaddingBottom={0} buffer={96} backgroundColor="#721957">
-        <Description banner={true} bodyMarginBottom={0} padding={0} width="50%" textFontSize={24} tagFontSize={45} title="Adobe XD Platform" text="Push the boundaries of design work">
+        <Description banner={true} textWeight={400} bodyMarginBottom={0} padding={0} width="50%" textFontSize={24} tagFontSize={45} title="Adobe XD Platform" text="Push the boundaries of design work">
         </Description>
         <Card level="h4" space={0} img={mainSVG} imgAlt="placeholder" marginLeft="5%" width="45%">
         </Card>
@@ -147,10 +147,10 @@ export default function Home() {
       <Cards paddingTop={0} marginLeft={40} wrapperPaddingBottom={40} height="auto" backgroundColor="#F4F4F4" justifyContent="flex-start">
         <div class="middle-section">
           <div class="left">
-            <img src={marketplacePNG} alt="placeholder" class="market"></img>
+            <img src={marketplacePNG} title="placeholder" class="market"></img>
           </div>
           <div class="right">
-            <img src={righttopPNG} class="righttop"></img>
+            <img src={righttopPNG} title="placeholder" class="righttop"></img>
             <div class="topText">
               <p class="normal">Plugin Manager</p>
               <p>The XD Plugin Manager lets designers discover plugins and integrations right where they spend their time: in Adobe XD.</p>

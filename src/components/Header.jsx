@@ -78,7 +78,7 @@ export default function Header({ items = [] } = {}, home) {
   return (
     <header style={styles.heading}>
       <a href={home}>
-        <img style={styles.logo} src={logo} alt="Adobe XD logo" />
+        <img style={styles.logo} src={logo} title="Adobe XD logo" />
       </a>
       <h1 style={styles.h1}>Adobe XD Platform</h1>
       <ul style={styles.ul}>

@@ -67,7 +67,7 @@ export default function Card({ bodyWeight = 400, outerAlignItems = "center", img
   return (
     <div style={styles.wrapper}>
       <div style={styles.inner}>
-        {img && <a href={href}><img style={styles.img} src={img} alt={imgAlt} /></a>}
+        {img && <a href={href}><img style={styles.img} src={img} title={imgAlt} /></a>}
         {title && <div style={styles[level]}>{title}</div>}
         {children && <div style={styles.body}>{children}</div>}
         {link && <a style={styles.link} href={href}>{link}</a>}
