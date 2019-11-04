@@ -106,15 +106,15 @@ export default function Home() {
         <Card bodyWeight={200} outerAlignItems="flex-start" level="h4" spaceTop={18} space={18} img={cloudSVG} imgAlt="XD Cloud Content APIs" marginLeft={0} title="Cloud Content APIs" href={cloudLink} children="Connect XD designs to your product" link="Start integrating">
         </Card>
       </Cards>
-      <Cards height="auto" justifyContent="flex-start" wrapperPaddingBottom={0}>
+      <Cards wrapperMarginBottom={-1} height="auto" justifyContent="flex-start" wrapperPaddingBottom={0}>
         <Description paddingBottom={0} marginTop={30} tagFontSize={30} color="white" title="See what developers are building" >
         </Description>
       </Cards>
-      <Cards height={100} justifyContent="flex-start" wrapperPaddingBottom={15}>
+      <Cards wrapperMarginBottom={-1} height={100} justifyContent="flex-start" wrapperPaddingBottom={15}>
         <Description paddingBottom={10} arrowSVG={chevronSVG} imgAlt="Create your own plugin" width="100%" tagFontSize={24} color="white" rightTag="Create your own plugin" href={pluginLink} title="XD Plugins" text="Developers extend XD's core functionality with these types of plugins and more, all powered by the XD Plugin APIs." >
         </Description>
       </Cards>
-      <Cards height="auto" marginLeft={32} wrapperPaddingBottom={10}>
+      <Cards wrapperMarginBottom={-1} height="auto" marginLeft={32} wrapperPaddingBottom={10}>
         <FeatureCard body="Connect designers with their teams and stakeholders" img={frontify} href="https://adobe.com/go/xd_plugins_discover_plugin?pluginId=30cb8db1" href2="https://adobe.com/go/xd_plugins_discover_plugin?pluginId=28192327" imgAlt="Frontify" img2={jira} imgAlt2="Jira" width="20%" height={243} backgroundColor="#505050" title="Collaboration" imgHeight={41} imgWidth={41}>
 
         </FeatureCard>
@@ -131,7 +131,7 @@ export default function Home() {
 
         </FeatureCard>
       </Cards>
-      <Cards height={100} justifyContent="flex-start" wrapperPaddingBottom={15}>
+      <Cards wrapperMarginBottom={-1} height={100} justifyContent="flex-start" wrapperPaddingBottom={15}>
         <Description paddingBottom={15} arrowSVG={chevronSVG} imgAlt="Start integrating today" width="100%" tagFontSize={24} color="white" rightTag="Start integrating today" href={cloudLink} title="XD Cloud Content Integrations" text="With the XD Cloud Content APIs, you can bring design work created in XD directly to your product or service.">
         </Description>
       </Cards>

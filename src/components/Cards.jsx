@@ -13,6 +13,7 @@ export default function Cards({
   paddingRight = "10%",
   marginLeft,
   marginRight,
+  wrapperMarginBottom,
   wrapperPaddingBottom = 35,
   width,
   flexDirection = "row",
@@ -20,7 +21,7 @@ export default function Cards({
   paddingTop,
   minWidth = 300,
   buffer,
-  twoApis=false
+  twoApis = false
 } = {}) {
   const styles = {
     wrapper: {
@@ -30,8 +31,10 @@ export default function Cards({
       paddingBottom: wrapperPaddingBottom,
       paddingLeft,
       paddingRight,
+      marginBottom: wrapperMarginBottom,
       height,
-      paddingTop: buffer
+      paddingTop: buffer,
+      border: 0
     },
     h1: {
       fontWeight: 200,
@@ -67,13 +70,13 @@ export default function Cards({
       height: "100%"
     }
   };
-    
-      return (
-        <div style={styles.wrapper} class="smallerPadding">
-          {heading && <div style={styles[level]}>{heading}</div>}
-          <div style={styles.cards}>{children}</div>
-          {/* {footing} */}
-        </div>
-      )  
-    
+
+  return (
+    <div style={styles.wrapper} class="smallerPadding">
+      {heading && <div style={styles[level]}>{heading}</div>}
+      <div style={styles.cards}>{children}</div>
+      {/* {footing} */}
+    </div>
+  )
+
 }
