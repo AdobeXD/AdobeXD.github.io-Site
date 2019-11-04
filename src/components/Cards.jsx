@@ -5,19 +5,37 @@ export default function Cards({
   footing,
   level = "h1",
   children,
-  backgroundColor = "#F5F5F5",
-  backgroundImage
+  backgroundColor = "#323232",
+  backgroundImage,
+  justifyContent = "center",
+  height,
+  paddingLeft = "10%",
+  paddingRight = "10%",
+  marginLeft,
+  marginRight,
+  wrapperPaddingBottom = 35,
+  width,
+  flexDirection = "row",
+  textAlign = "center",
+  paddingTop,
+  minWidth = 300,
+  buffer,
+  twoApis=false
 } = {}) {
   const styles = {
     wrapper: {
       backgroundImage: backgroundImage ? `url(${backgroundImage})` : undefined,
       backgroundSize: "cover",
       backgroundColor,
-      paddingBottom: 48
+      paddingBottom: wrapperPaddingBottom,
+      paddingLeft,
+      paddingRight,
+      height,
+      paddingTop: buffer
     },
     h1: {
       fontWeight: 200,
-      textAlign: "center",
+      textAlign,
       padding: 0,
       paddingTop: 48,
       margin: 0,
@@ -25,8 +43,9 @@ export default function Cards({
       fontSize: 32
     },
     h2: {
+
       fontWeight: 700,
-      textAlign: "center",
+      textAlign,
       padding: 0,
       paddingTop: 48,
       margin: 0,
@@ -35,20 +54,26 @@ export default function Cards({
     },
     cards: {
       display: "flex",
-      flexDirection: "row",
-      justifyContent: "space-between",
-      alignItems: "baseline",
-      flexWrap: "wrap",
-      minWidth: 900,
-      maxWidth: 1200,
-      margin: "auto auto"
+      flexDirection,
+      justifyContent,
+      alignItems: "center",
+      textAlign,
+      minWidth,
+      maxWidth: width,
+      marginLeft,
+      marginRight,
+      padding: "12 24",
+      paddingTop,
+      height: "100%"
     }
   };
-  return (
-    <div style={styles.wrapper}>
-      {heading && <div style={styles[level]}>{heading}</div>}
-      <div style={styles.cards}>{children}</div>
-      {footing}
-    </div>
-  );
+    
+      return (
+        <div style={styles.wrapper} class="smallerPadding">
+          {heading && <div style={styles[level]}>{heading}</div>}
+          <div style={styles.cards}>{children}</div>
+          {/* {footing} */}
+        </div>
+      )  
+    
 }

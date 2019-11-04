@@ -1,45 +1,77 @@
 import React from "react";
 
-export default function Card({ img, title, children, level = "h3", imgAlt="" } = {}) {
+export default function Card({ bodyWeight = 400, outerAlignItems = "center", imgMaxWidth = "100%", spaceTop, marginRight, bodyHeight, href, space = 30, top = "auto", imgPosition = "static", bodyWidth = "100%", link, width, img, title, children, level = "h3", imgAlt = "", marginLeft = 0, imgWidth, imgHeight } = {}) {
   const styles = {
     wrapper: {
+      // flexDirection: "column",
       display: "flex",
+      justfiyContent: "center",
+      flex: "1 1 auto",
+      marginLeft,
+      marginRight,
+      alignItems: outerAlignItems,
       flexDirection: "column",
-      flex: "1 1 256px",
-      padding: 24
+      width,
+      position: "relative"
     },
     img: {
-      height: 154,
-      width: 150,
-      margin: "auto auto"
+      // height: imgHeight,
+      // width: imgWidth,
+      maxWidth: imgMaxWidth,
+      height: "auto",
+      marginBottom: space,
+      marginTop: spaceTop,
+      position: imgPosition,
+      top,
+      verticalAlign: "top"
     },
     h3: {
       textAlign: "center",
       padding: 24,
-      fontSize: 24,
-      fontWeight: 300,
+      fontSize: 30,
+      fontWeight: "bold",
       margin: 0
     },
     h4: {
       textAlign: "center",
-      padding: 24,
-      fontSize: 20,
-      fontWeight: 300,
+      fontSize: 24,
+      width: bodyWidth,
       margin: 0
     },
     body: {
       margin: 0,
-      padding: "0 24px",
+      padding: "6px 24px 0px",
       textAlign: "center",
       fontWeight: "normal",
-      fontSize: 16
+      fontSize: 15,
+      width: bodyWidth,
+      height: bodyHeight,
+      fontWeight: bodyWeight
+    },
+    link: {
+      margin: 0,
+      padding: "12px 24px 20px",
+      textAlign: "center",
+      fontWeight: "normal",
+      fontSize: 15,
+      color: "#1473E6"
+    },
+    inner: {
+      display: "flex",
+      flexDirection: "column",
+      justfiyContent: "center",
+      flex: "1 1 auto",
+      alignItems: "center"
     }
   };
   return (
     <div style={styles.wrapper}>
-      {img && <img style={styles.img} src={img} alt={imgAlt} />}
-      <div style={styles[level]}>{title}</div>
-      <div style={styles.body}>{children}</div>
+      <div style={styles.inner}>
+        {img && <a href={href}><img style={styles.img} src={img} title={imgAlt} /></a>}
+        {title && <div style={styles[level]}>{title}</div>}
+        {children && <div style={styles.body}>{children}</div>}
+        {link && <a style={styles.link} href={href}>{link}</a>}
+      </div>
     </div>
   );
 }
