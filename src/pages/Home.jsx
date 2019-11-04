@@ -61,10 +61,10 @@ import TrelloLogo from "../assets/logos/mark-trello-blue-Blue.png";
 import SlopeLogo from "../assets/logos/slope-logo_full-color_dark.png";
 import InMotionNowLogo from "../assets/logos/F.inmotionnowlogo.png";
 
-const cloudLink = "http://localhost:8080/";
-const pluginLink = "http://localhost:8081/";
-const communityLink = "http://localhost:8082/";
-const homeLink = "http://localhost:3000/";
+const cloudLink = "https://adobexdplatform.com/cloud-content-api-docs/";
+const pluginLink = "https://adobexdplatform.com/plugin-docs/";
+const communityLink = "https://adobexdplatform.com/community-and-support/";
+const homeLink = "https://adobexdplatform.com/";
 const consoleLink = "https://console.adobe.io";
 const cloudConsoleLink = "https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?JDQ78F";
 const forumLink = "https://forums.adobexdplatform.com";
