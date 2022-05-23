@@ -62,12 +62,12 @@ import SlopeLogo from "../assets/logos/slope-logo_full-color_dark.png";
 import InMotionNowLogo from "../assets/logos/F.inmotionnowlogo.png";
 
 const cloudLink = "https://adobexdplatform.com/cloud-content-api-docs/";
-const pluginLink = "https://adobexdplatform.com/plugin-docs/";
-const communityLink = "https://adobexdplatform.com/community-and-support/";
-const homeLink = "https://adobexdplatform.com/";
-const consoleLink = "https://console.adobe.io";
-const cloudConsoleLink =
-  "https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?JDQ78F";
+const pluginLink = "https://developer.adobe.com/xd/uxp/";
+const communityLink = "https://forums.creativeclouddeveloper.com/c/adobe-xd/61";
+const homeLink = "https://developer.adobe.com/xd/";
+const consoleLink = "https://developer.adobe.com/console/home";
+{/* const cloudConsoleLink =
+  "https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?JDQ78F"; */}
 const forumLink = "https://forums.creativeclouddeveloper.com";
 const newsletterLink =
   "https://www.adobe.com/subscription/ccdevnewsletter.html";
@@ -78,7 +78,6 @@ const blogUrl =
 export default function Home() {
   const items = [
     { label: "Plugin APIs", href: pluginLink },
-    { label: "Cloud Content APIs", href: cloudLink },
     { label: "Community & Support", href: communityLink },
   ];
   const styles = {
@@ -162,20 +161,7 @@ export default function Home() {
           children="Bring your ideas and features to XD"
           link="Create a plugin"
         ></Card>
-        <Card
-          bodyWeight={200}
-          outerAlignItems="flex-start"
-          level="h4"
-          spaceTop={18}
-          space={18}
-          img={cloudSVG}
-          imgAlt="XD Cloud Content APIs"
-          marginLeft={0}
-          title="Cloud Content APIs"
-          href={cloudLink}
-          children="Connect XD designs to your product"
-          link="Start integrating"
-        ></Card>
+       
       </Cards>
       <Cards
         wrapperMarginBottom={-1}
@@ -296,25 +282,7 @@ export default function Home() {
           marginLeft={20}
         ></FeatureCard>
       </Cards>
-      <Cards
-        wrapperMarginBottom={-1}
-        height={100}
-        justifyContent="flex-start"
-        wrapperPaddingBottom={15}
-      >
-        <Description
-          paddingBottom={15}
-          arrowSVG={chevronSVG}
-          imgAlt="Start integrating today"
-          width="100%"
-          tagFontSize={24}
-          color="white"
-          rightTag="Start integrating today"
-          href={cloudLink}
-          title="XD Cloud Content Integrations"
-          text="With the XD Cloud Content APIs, you can bring design work created in XD directly to your product or service."
-        ></Description>
-      </Cards>
+      
       <Cards
         height="auto"
         marginLeft={32}
